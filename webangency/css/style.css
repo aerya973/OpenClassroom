@@ -45,6 +45,9 @@
 	.navigation {
 		justify-content: space-around;
 	}
+	.slide {
+		justify-content: space-around;
+	}
 }
 
 @media all and (max-width: 600px) {
@@ -62,5 +65,8 @@
 	}
 	.navigation li:last-of-type a {
 		border-bottom: none;
+	}
+	.alide {
+		justify-content: space-around;
 	}
 }
