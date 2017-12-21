@@ -1,7 +1,7 @@
 @import "compass/css3";
 /*BARRE DE NAVIGATION*/
 
-.navigation {
+#navigation {
 	list-style: none;
 	margin: 0;
 	background: white;
@@ -16,7 +16,7 @@
 }
 /*Liens dans la barre de nav*/
 
-.navigation a {
+#navigation a {
 	text-decoration: none;
 	display: block;
 	padding: 1em;
@@ -24,7 +24,7 @@
 }
 /* Survol de lien avec la souris*/
 
-.navigation a:hover {
+#navigation a:hover {
 	/*background-color: blue;*/
 }
 /* IMAGE BANNIERE */
@@ -39,10 +39,11 @@
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	justify-content: flex-start;
+	max-width: 100%;
 }
 
 @media all and (max-width: 800px) {
-	.navigation {
+	#navigation {
 		justify-content: space-around;
 	}
 	.slide {
@@ -51,22 +52,24 @@
 }
 
 @media all and (max-width: 600px) {
-	.navigation {
+	#navigation {
 		-webkit-flex-flow: column wrap;
 		flex-flow: column wrap;
 		padding: 0;
 	}
-	.navigation a {
+	#navigation a {
 		text-align: center;
 		padding: 10px;
 		border-top: 1px solid rgba(255, 255, 255, 0.3);
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 		/*color: black;*/
 	}
-	.navigation li:last-of-type a {
+	#navigation li:last-of-type a {
 		border-bottom: none;
 	}
-	.alide {
-		justify-content: space-around;
+	.slide {
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		padding: 0;
 	}
 }
