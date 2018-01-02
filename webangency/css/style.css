@@ -229,10 +229,15 @@ p {
 }
 /********** IMAGE PC ******/
 
+.main {
+	display: flex;
+}
+
 .main img {
 	display: flex;
 	flex-direction: ;
 	width: 50%;
+	height: 50%;
 }
 /********* LISTES SERVICES *******/
 
