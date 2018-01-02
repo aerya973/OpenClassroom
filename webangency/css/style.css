@@ -1,4 +1,4 @@
-@import "compass/css3";
+/*@import "compass/css3";*/
 /*BARRE DE NAVIGATION*/
 /* RESET CSS
 http://meyerweb.com/eric/tools/css/reset/
@@ -143,7 +143,7 @@ a {
 
 @font-face {
 	font-family: 'fontawesome';
-	src: url('/fonts/fontawesome-webfont.woff') format('woff'), url('/fonts/fontawesome-webfont.ttf') format('ttf'), url('/fonts/fontawesome-webfont.eot') format('eot'), url('/fonts/fontawesome-webfont.svg') format('svg');
+	src: url('/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/fontawesome-webfont.woff') format('woff'), url('/fonts/fontawesome-webfont.ttf') format('truetype'), url('/fonts/fontawesome-webfont.svg') format('svg');
 }
 
 body {
@@ -185,6 +185,52 @@ header {
 	/*40px*/
 	
 	margin-top: 9%;
+}
+
+h1 {
+	font-size: 70%;
+	font-weight: bold;
+}
+
+p {
+	font-size: 25%;
+	padding: 4%;
+}
+/******BARRE SEPARATION SERVICES/CONTENU*******/
+
+.ligne {
+	background-color: #d9d9d9;
+	content: '';
+	height: 1%;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 8%;
+}
+
+.point {
+	background-color: #5CADD3;
+	border-radius: 50%;
+	bottom: 0%;
+	content: '';
+	height: 1.5%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, 50%);
+	width: 1%;
+}
+
+::before ligne {
+	padding: 4%;
+}
+
+::after ligne {
+	padding: 4%;
+}
+/********** IMAGE PC ******/
+
+.main img {
+	width: 50%;
 }
 /********** MEDIA *********/
 
