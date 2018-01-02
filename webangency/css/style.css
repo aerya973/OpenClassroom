@@ -230,7 +230,17 @@ p {
 /********** IMAGE PC ******/
 
 .main img {
+	display: flex;
+	flex-direction: ;
 	width: 50%;
+}
+/********* LISTES SERVICES *******/
+
+#liste {
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+	font-size: 170%;
 }
 /********** MEDIA *********/
 
