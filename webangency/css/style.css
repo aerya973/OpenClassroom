@@ -261,6 +261,12 @@ h2 {
 	font-weight: bold;
 	;
 }
+/*********PORTFOLIO***********/
+
+#container {
+	display: flex;
+	flex-wrap: wrap;
+}
 /********** MEDIA *********/
 
 @media all and (max-width: 800px) {
@@ -295,9 +301,6 @@ h2 {
 			width: 20px;
 		}
 	}
-}
-
-#navigation li:last-of-type a {
-	border-bottom: none;
-}
-}
+	#navigation li:last-of-type a {
+		border-bottom: none;
+	}
