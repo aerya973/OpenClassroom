@@ -218,6 +218,7 @@ p {
 	position: absolute;
 	transform: translate(-50%, 50%);
 	width: 1%;
+	top: 5%;
 }
 
 ::before ligne {
