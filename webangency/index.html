@@ -7,34 +7,33 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="/css/style.css" rel="stylesheet">
-
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	    <![endif]-->
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
+	<!-- Navbar -->
 	<header>
-
 		<a href="#"><img src="/images/logo.png"></a>
 		<ul id="navigation">
 			<li class="Acceuil"><a href="">Accueil</a></li>
 			<li class="Services"><a href="#services">Services</a></li>
 			<li class="Portfolio"><a href="#portfolio">Portfolio</a></li>
-			<li class="Contact"><a href="#">Contact</a></li>
+			<li class="Contact"><a href="#contact">Contact</a></li>
 		</ul>
-
 	</header>
 
+	<!-- Slider -->
 	<section>
 		<div class="slide">
 			<img src="images/slider/bg1.jpg">
 		</div>
 	</section>
 
+	<!-- Content -->
 	<section>
 		<div id="services">
 			<h1>NOS SERVICES</h1>
@@ -50,20 +49,17 @@
 			<div id="liste">
 				<ul>
 					<li>
-						<!-- BALISE ICONE -->
-						<h2>Titre 1</h1>
+						<h2>Titre 1</h2>
 						<p> Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.
 						</p>
 					</li>
 					<li>
-						
-						<!-- BALISE ICONE -->
-						<h2>Titre 1</h1>
+						<h2>Titre 1</h2>
 						<p> Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.
 						</p>
 					</li>
 					<li>
-						<h2>Titre 1</h1>
+						<h2>Titre 1</h2>
 						<!-- BALISE ICONE -->
 						<p> Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu. iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.
 						</p>
@@ -72,6 +68,8 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- Portfolio -->
 	<section>
 		<div id="portfolio">
 			<h1>NOS PROJETS</h1>
@@ -80,19 +78,29 @@
 			</div>
 			<p>Jetez un œil à nos créations pour vous faire un avis ! A la WebAgency, nous sommes à l’écoutes de vos besoins et mettrons tout en œuvre pour réaliser vos projets Web. </p>
 			<div id="container">
-				<div class="1"> <img src="images/portfolio/01.jpg" alt=""> </div>
-				<div class="2"> <img src="images/portfolio/02.jpg" alt=""> </div>
-				<div class="3"> <img src="images/portfolio/03.jpg" alt=""> </div>
-				<div class="4"> <img src="images/portfolio/04.jpg" alt=""> </div>
-				<div class="5"> <img src="images/portfolio/05.jpg" alt=""> </div>
-				<div class="6"> <img src="images/portfolio/06.jpg" alt=""> </div>
+				<div class="image"> <img src="images/portfolio/01.jpg" alt=""> </div>
+				<div class="image"> <img src="images/portfolio/02.jpg" alt=""> </div>
+				<div class="image"> <img src="images/portfolio/03.jpg" alt=""> </div>
+				<div class="image"> <img src="images/portfolio/04.jpg" alt=""> </div>
+				<div class="image"> <img src="images/portfolio/05.jpg" alt=""> </div>
+				<div class="image"> <img src="images/portfolio/06.jpg" alt=""> </div>
 			</div>
 		</div>
 	</section>
-	
-	<section>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap"> </script>
-	</section>
+
+	<!-- Google Maps -->
+	<div id="contact">
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.215787370371!2d2.347635615032136!3d48.873162779288954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1515070276188" width="800" height="450" frameborder="0" style="border:0" allowfullscreen>
+			</iframe>
+
+		</div>
+
+	</div>
+
+	<!-- Load JS scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+	<script src="/js/main.js"></script>
 
 </body>
 
