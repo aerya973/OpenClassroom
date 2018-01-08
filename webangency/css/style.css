@@ -250,7 +250,6 @@ h1 {
 
 .main img {
 	display: flex;
-	flex-direction: ;
 	width: 50%;
 	height: 50%;
 	padding-top: 50px;
@@ -265,9 +264,8 @@ h1 {
 }
 
 h2 {
-	font-size: 0.4em;
+	font-size: 0.3em;
 	font-weight: bold;
-	;
 }
 /*********PORTFOLIO***********/
 
@@ -288,6 +286,48 @@ h2 {
 #contact {
 	height: 20%;
 	width: 100%;
+}
+/*********FORMULAIRE*******/
+
+form {
+	width: 290px;
+	height: 500px;
+}
+
+fieldset {
+	padding: 0 20px 20px 20px;
+	margin-bottom: 10px;
+	background-color: #d4d4d4;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+fieldset p {
+	overflow: hidden;
+	width: 290px;
+}
+
+fieldset h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+fieldset span {
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+label {
+	margin-top: 10px;
+	display: block;
+}
+
+textaerea {
+	margin-top: 20px;
+	width: 290px;
+	height: 164px;
 }
 /********** MEDIA *********/
 
@@ -315,24 +355,28 @@ h2 {
 		border-top: 1px solid rgba(255, 255, 255, 0.3);
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
-	@media all and (min-width: 240px) {
-		.ligne {
-			left: 50%;
-			position: absolute;
-			transform: translateX(-50%);
-			width: 20px;
-		}
+}
+
+@media all and (min-width: 240px) {
+	.ligne {
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		width: 20px;
 	}
-	#navigation li:last-of-type a {
-		border-bottom: none;
-	}
-	/* TEST CENTER MAP */
-	
-	.map {
-		overflow: hidden;
-	}
-	div.map iframe {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
+}
+
+#navigation li:last-of-type a {
+	border-bottom: none;
+}
+/* TEST CENTER MAP */
+
+.map {
+	overflow: hidden;
+}
+
+div.map iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
