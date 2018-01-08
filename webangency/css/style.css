@@ -196,17 +196,36 @@ h1 {
 
 #liste p {
 	font-size: 0.3em;
-	padding: 15px;
+	padding-right: 15px;
+	width: 400px;
 }
 
 #services p {
 	font-size: 0.3em;
 	padding: 40px;
+	line-height: 10%;
 }
 
 #portfolio p {
 	padding: 2%;
 	text-align: center;
+}
+/********ICONES********/
+
+.fa.fa-line-chart,
+.fa.fa-cubes,
+.fa.fa-pie-chart {
+	font-size: 0.5em;
+	color: #5CADD3;
+	border: 1.4px solid #b2b2b299;
+	border-radius: 50%;
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	padding: 11px;
+	border-radius: 50%;
 }
 /******BARRE SEPARATION SERVICES/CONTENU*******/
 
@@ -244,6 +263,7 @@ h1 {
 
 .main {
 	display: flex;
+	padding-bottom: 150px;
 }
 
 .main img {
@@ -256,14 +276,23 @@ h1 {
 
 #liste {
 	display: flex;
-	justify-content: flex-end;
-	width: 50%;
+	flex-direction: column;
+	flex-wrap: wrap justify-content: flex-end;
+	width: 100px;
 	font-size: 3em;
+	height: 100px;
+	padding-bottom: 50px;
 }
 
 h2 {
 	font-size: 0.3em;
 	font-weight: bold;
+}
+
+.listbox {
+	height: 110px;
+	margin: 5px;
+	width: 456px;
 }
 /*********PORTFOLIO***********/
 
@@ -288,7 +317,7 @@ h2 {
 /*********FORMULAIRE*******/
 
 .box {
-	top: 1970px;
+	top: 360%;
 	background-color: rgba(255, 255, 255, 0.7);
 	z-index: 4;
 	left: 65%;
