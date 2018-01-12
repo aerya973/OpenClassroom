@@ -410,9 +410,6 @@ input[type="submit"] {
 	.main {
 		padding-bottom: 300px;
 	}
-	.main img {
-		display: none;
-	}
 }
 
 @media all and (min-width: 240px) {
