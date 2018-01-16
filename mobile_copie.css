@@ -1,0 +1,234 @@
+@media all and (max-device-width: 480px) {
+	/******** POLICE **********/
+	
+	@font-face {
+		font-family: 'fontawesome';
+		src: url('/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/fontawesome-webfont.woff') format('woff'), url('/fonts/fontawesome-webfont.ttf') format('truetype'), url('/fonts/fontawesome-webfont.svg') format('svg');
+	}
+	body {
+		font-family: 'fontawesome', Fallback, sans-serif;
+		max-width: 100%;
+	}
+	/******** HEADER ***********/
+	
+	header {
+		display: flex;
+		justify-content: space-between;
+		padding: 1em;
+		align-items: center;
+	}
+	#navigation {
+		list-style: none;
+		margin: 0;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	}
+	#navigation a {
+		display: block;
+		padding: 1em;
+		color: Black;
+	}
+	#navigation a:hover {
+		color: black;
+		border-top: 1.5px solid #5CADD3;
+		height: 60px;
+		width: auto;
+	}
+	/************ IMAGE BANNIERE **********/
+	
+	.slide img {
+		width: 100%;
+	}
+	#services {
+		text-align: center;
+		font-size: 3.5em;
+		margin-top: 9%;
+	}
+	h1 {
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		padding: 15px;
+	}
+	/****** PARAGRAPHE DES DIFFERENTES SECTIONS *******/
+	
+	#liste p {
+		font-size: 0.3em;
+		padding-right: 15px;
+		width: 300px;
+	}
+	#services p {
+		font-size: 0.3em;
+		padding: 40px;
+		line-height: 17px;
+	}
+	#portfolio p {
+		padding: 2%;
+		text-align: center;
+		font-size: 1.4em;
+		margin-top: 20px;
+	}
+	/********ICONES********/
+	
+	.fa.fa-line-chart,
+	.fa.fa-cubes,
+	.fa.fa-pie-chart {
+		font-size: 0.5em;
+		color: #5CADD3;
+		border: 1.4px solid #b2b2b299;
+		border-radius: 50%;
+	}
+	.fa {
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		padding: 11px;
+		border-radius: 50%;
+	}
+	/******BARRE SEPARATION SERVICES/CONTENU*******/
+	
+	.ligne {
+		background-color: #d9d9d9;
+		content: '';
+		height: 1px;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		width: 140px;
+	}
+	.ligne .point {
+		background-color: #5CADD3;
+		border-radius: 60px;
+		border: 3.5px solid white;
+		content: '';
+		height: 15px;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, 50%);
+		width: 15px;
+		top: -14px;
+	}
+	::before ligne {
+		padding: 4%;
+	}
+	::after ligne {
+		padding: 4%;
+	}
+	/********** IMAGE PC ******/
+	
+	.main {
+		display: flex;
+		padding-bottom: 150px;
+	}
+	.main img {
+		display: none;
+	}
+	/********* LISTES SERVICES *******/
+	
+	#liste {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap justify-content: flex-end;
+		width: 100px;
+		font-size: 3em;
+		height: 100px;
+		padding-bottom: 50px;
+	}
+	h2 {
+		font-size: 0.3em;
+		font-weight: bold;
+	}
+	.listbox {
+		margin-left: 50%;
+		width: 300px;
+		text-align: center;
+		font-size: 1.5em;
+		margin-bottom: 90px;
+	}
+	.iconbox {
+		margin-left: 50%;
+		width: 300px;
+		text-align: center;
+		font-size: 1.5em;
+		margin-bottom: 10px;
+	}
+	/*********PORTFOLIO***********/
+	
+	#container {
+		width: 90%;
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 20px;
+		padding-bottom: 60px;
+		padding-left: 15%;
+	}
+	#portfolio {
+		margin-top: 650px;
+	}
+	#portfolio img {
+		display: block;
+		width: 23.2vw;
+		padding-left: 15%;
+		padding-bottom: 10%;
+	}
+	/*********MAP**********/
+	
+	#contact {
+		height: 20%;
+		width: 100%;
+	}
+	/*********FORMULAIRE*******/
+	
+	.box {
+		bottom: 460px;
+		background-color: rgba(255, 255, 255, 0.7);
+		z-index: 4;
+		left: 65%;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		padding-top: 5px;
+		position: relative;
+		width: 330px;
+		text-align: left;
+	}
+	.box p {
+		overflow: hidden;
+		width: 290px;
+	}
+	.box h3 {
+		font-size: 1.2em;
+		font-weight: bold;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.box span {
+		font-weight: bold;
+		font-size: 0.9em;
+	}
+	label {
+		margin-top: 10px;
+		display: block;
+	}
+	textarea {
+		margin-top: 20px;
+		width: 290px;
+		height: 164px;
+	}
+	input[type="submit"] {
+		background-color: #5CADD3;
+		border-radius: 5px;
+		color: white;
+		font-weight: 500;
+		margin-top: 10px;
+	}
+	.map {
+		height: 500px;
+	}
+	div.map iframe {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
