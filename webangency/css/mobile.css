@@ -173,6 +173,55 @@
 		padding-left: 15%;
 		padding-bottom: 10%;
 	}
+	#boutons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.b1,
+	.b2,
+	.b3,
+	.b4 {
+		background-color: #eaeaea;
+		border: 1px solid #eaeaea;
+		padding: 11px;
+		width: 90%;
+		text-align: center;
+		font-size: 0.8em;
+	}
+	.b1 {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	.b4 {
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	.b1:hover,
+	.b2:hover,
+	.b3:hover,
+	.b4:hover {
+		background: #5CADD3;
+		position: relative;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		color: white;
+		font-weight: 500;
+	}
+	.b1:hover:before,
+	.b2:hover:before,
+	.b3:hover:before,
+	.b4:hover:before {
+		content: "";
+		position: absolute;
+		right: 45%;
+		top: 100%;
+		border-top: 10px solid #5CADD3;
+		border-right: 8px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 8px solid transparent;
+	}
 	/*********MAP**********/
 	
 	#contact {
