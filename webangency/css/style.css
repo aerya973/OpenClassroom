@@ -196,10 +196,10 @@ header img {
 	letter-spacing: -0.05em;
 	width: 100%;
 	height: auto;
-	padding-top: 153px;
-	padding-right: 50%;
-	padding-left: 8%;
+	padding-top: 12%;
+	padding-left: 6%;
 	text-align: left;
+	font-size: 2.7em;
 }
 
 .slide p {
@@ -208,8 +208,8 @@ header img {
 	font-weight: bold;
 	width: auto;
 	height: auto;
-	padding-top: 248px;
-	padding-left: 124px;
+	padding-top: 21%;
+	padding-left: 6%;
 }
 
 .info {
@@ -217,9 +217,9 @@ header img {
 	border-radius: 2px;
 	color: white;
 	font-weight: 500;
-	margin-top: 325px;
+	margin-top: 25%;
 	position: absolute;
-	margin-left: 125px;
+	margin-left: 6%;
 	font-size: 1.2em;
 	border-right: 20px solid #5CADD3;
 	border-left: 20px solid #5CADD3;
@@ -229,13 +229,12 @@ header img {
 
 #services {
 	text-align: center;
-	font-size: 3.5em;
 	margin-top: 9%;
 	/**/
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 3.5em;
 	font-weight: bold;
 	text-align: center;
 	padding: 15px;
@@ -249,7 +248,7 @@ h1 {
 }
 
 #services p {
-	font-size: 0.3em;
+	font-size: 1em;
 	padding: 40px;
 	line-height: 17px;
 }
@@ -356,6 +355,10 @@ h2 {
 	padding-right: 5%;
 }
 
+#portfolio {
+	background-color: #f0f0f0;
+}
+
 #portfolio img {
 	display: block;
 	width: 23.2vw;
@@ -373,8 +376,8 @@ h2 {
 .b2,
 .b3,
 .b4 {
-	background-color: #eaeaea;
-	border: 1px solid #eaeaea;
+	background-color: #c2c2c2;
+	border: 1px solid: #c2c2c2;
 	padding: 11px;
 	width: 5%;
 	text-align: center;
