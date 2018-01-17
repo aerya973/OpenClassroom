@@ -17,6 +17,9 @@
 		padding: 1em;
 		align-items: center;
 	}
+	header img {
+		padding: 0px;
+	}
 	#navigation {
 		list-style: none;
 		margin: 0;
@@ -42,10 +45,23 @@
 	.slide img {
 		width: 100%;
 	}
+	.slide strong {
+		color: #5CADD3;
+	}
+	.slide h1 {
+		display: none;
+	}
+	.slide p {
+		display: none;
+	}
+	.info {
+		display: none;
+	}
 	#services {
 		text-align: center;
 		font-size: 3.5em;
 		margin-top: 9%;
+		/**/
 	}
 	h1 {
 		font-size: 40px;
@@ -131,25 +147,31 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap justify-content: flex-end;
-		width: 100px;
+		width: 100%;
 		font-size: 3em;
-		height: 100px;
-		padding-bottom: 50px;
+		height: 100%;
 	}
 	h2 {
 		font-size: 0.3em;
 		font-weight: bold;
 	}
+	.listbox h2 {
+		font-size: 0.3em;
+		font-weight: bold;
+		width: 100%;
+		text-align: center;
+		margin-left: -15px;
+		margin-bottom: 10px;
+	}
 	.listbox {
-		margin-left: 50%;
-		width: 300px;
+		margin-left: 19px;
+		width: 100%;
 		text-align: center;
 		font-size: 1.5em;
-		margin-bottom: 90px;
+		margin-bottom: 50px;
 	}
 	.iconbox {
-		margin-left: 50%;
-		width: 300px;
+		width: 100%;
 		text-align: center;
 		font-size: 1.5em;
 		margin-bottom: 10px;
@@ -163,9 +185,6 @@
 		padding-top: 20px;
 		padding-bottom: 60px;
 		padding-left: 15%;
-	}
-	#portfolio {
-		margin-top: 650px;
 	}
 	#portfolio img {
 		display: block;
