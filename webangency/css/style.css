@@ -150,6 +150,9 @@ header {
 	justify-content: space-between;
 	padding: 1em;
 	align-items: center;
+	position: fixed;
+	background-color: white;
+	width: 100%;
 }
 
 header img {
@@ -180,6 +183,10 @@ header img {
 	width: auto;
 }
 /************ IMAGE BANNIERE **********/
+
+.slide {
+	padding-top: 91px;
+}
 
 .slide img {
 	width: 100%;
