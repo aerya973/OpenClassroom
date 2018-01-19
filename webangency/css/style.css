@@ -175,12 +175,14 @@ header img {
 	display: block;
 	padding: 1em;
 	color: Black;
+	height: auto;
+	width: auto;
 }
 
 #navigation a:hover {
 	color: black;
-	border-top: 1.5px solid #5CADD3;
-	height: 60px;
+	border-top: 1px solid #5CADD3;
+	height: auto;
 	width: auto;
 }
 /************ IMAGE BANNIERE **********/
@@ -219,30 +221,30 @@ header img {
 	padding-top: 92px;
 }
 
-#slide strong {
+#slidetext strong {
 	color: #5CADD3;
 }
 
-#slide h1 {
+#slidetext h1 {
 	position: absolute;
 	text-transform: uppercase;
 	color: white;
 	letter-spacing: -0.05em;
-	width: 100%;
+	width: auto;
 	height: auto;
 	text-align: left;
 	font-size: 2.2em;
-	top: 36%;
-	left: 4%;
+	top: 48%;
+	left: 3.5%;
 }
 
-#slide p {
+#slidetext p {
 	position: absolute;
 	color: white;
 	font-weight: bold;
 	width: auto;
 	height: auto;
-	top: 52%;
+	top: 69%;
 	left: 4.5%;
 }
 
@@ -284,7 +286,7 @@ header img {
 	border-left: 20px solid #5CADD3;
 	border-top: 10px solid #5CADD3;
 	border-bottom: 10px solid #5CADD3;
-	top: 59%;
+	top: 77%;
 	left: 4.5%;
 }
 
