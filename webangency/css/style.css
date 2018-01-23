@@ -109,7 +109,7 @@ body {
 ol,
 ul {
 	list-style: none;
-	padding-left: 0px;
+	display: flex;
 }
 
 blockquote,
@@ -160,30 +160,25 @@ header img {
 	padding-left: 29%
 }
 
-#navigation {
-	list-style: none;
-	margin: 0;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
+nav {
 	display: flex;
-	margin-right: 170px;
+	justify-content: flex-end;
+	padding-right: 5%;
 }
 
-#navigation a {
-	display: block;
+nav a {
 	padding: 1em;
 	color: Black;
 	height: auto;
 	width: auto;
 }
 
-#navigation a:hover {
+nav a:hover {
 	color: black;
 	border-top: 1px solid #5CADD3;
 	height: auto;
 	width: auto;
+	top: 0;
 }
 /************ IMAGE BANNIERE **********/
 
@@ -271,14 +266,7 @@ header img {
 
 #slideshow {
 	position: relative;
-	width: 100%;
 	height: 600px;
-	overflow: hidden;
-}
-
-#slide li {
-	display: list-item;
-	text-align: -webkit-match-parent;
 }
 
 .info {
@@ -513,29 +501,24 @@ h2 {
 	height: 500px;
 }
 
-#map {
-	position: absolute;
+iframe {
+	width: 100%;
+	opacity: 0.6;
 }
 
-#blue {
+.blue {
 	background-color: #5CADD3;
-	position: absolute;
-	z-index: 1;
-	width: 100%;
-	height: 500px;
-	opacity: 0.3;
 }
 /*********FORMULAIRE*******/
 
 .box {
-	top: 50px;
 	background-color: rgba(255, 255, 255, 0.7);
 	z-index: 2;
 	left: 900px;
 	padding-bottom: 10px;
 	padding-left: 15px;
 	padding-top: 5px;
-	position: relative;
+	position: absolute;
 	width: 324px;
 	text-align: left;
 	border: 2px solid rgba(255, 255, 255, 0.7);
@@ -578,46 +561,7 @@ input[type="submit"] {
 	font-weight: 500;
 	margin-top: 10px;
 }
-/********** MEDIA *********/
 
-@media all and (max-width: 800px) {
-	header {
-		flex-direction: column;
-	}
-	header > a {
-		text-align: center;
-	}
-	#navigation {
-		justify-content: center;
-	}
-}
-
-@media all and (max-width: 600px) {
-	#navigation {
-		-webkit-flex-flow: column wrap;
-		flex-flow: column wrap;
-		padding: 0;
-	}
-	#navigation a {
-		text-align: center;
-		padding: 10px;
-		border-top: 1px solid rgba(255, 255, 255, 0.3);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	}
-	.main {
-		padding-bottom: 300px;
-	}
-}
-
-@media all and (min-width: 240px) {
-	.ligne {
-		left: 50%;
-		position: absolute;
-		transform: translateX(-50%);
-		width: 140px;
-	}
-}
-
-#navigation li:last-of-type a {
+nav li:last-of-type a {
 	border-bottom: none;
 }

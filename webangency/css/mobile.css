@@ -1,4 +1,133 @@
 @media all and (max-device-width: 480px) {
+	html,
+	body,
+	div,
+	span,
+	applet,
+	object,
+	iframe,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	blockquote,
+	pre,
+	a,
+	abbr,
+	acronym,
+	address,
+	big,
+	cite,
+	code,
+	del,
+	dfn,
+	em,
+	img,
+	ins,
+	kbd,
+	q,
+	s,
+	samp,
+	small,
+	strike,
+	strong,
+	sub,
+	sup,
+	tt,
+	var,
+	u,
+	i,
+	center,
+	dl,
+	dt,
+	dd,
+	ol,
+	ul,
+	li,
+	fieldset,
+	form,
+	label,
+	legend,
+	table,
+	caption,
+	tbody,
+	tfoot,
+	thead,
+	tr,
+	th,
+	td,
+	article,
+	aside,
+	canvas,
+	details,
+	embed,
+	figure,
+	figcaption,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	output,
+	ruby,
+	section,
+	summary,
+	time,
+	mark,
+	audio,
+	video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		box-sizing: border-box;
+	}
+	/* HTML5 display-role reset for older browsers */
+	
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol,
+	ul {
+		list-style: none;
+		flex-direction: column;
+	}
+	blockquote,
+	q {
+		quotes: none;
+	}
+	blockquote:before,
+	blockquote:after,
+	q:before,
+	q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	a {
+		text-decoration: none;
+	}
 	/******** POLICE **********/
 	
 	@font-face {
@@ -7,66 +136,47 @@
 	}
 	body {
 		font-family: 'fontawesome', Fallback, sans-serif;
-		max-width: 100%;
 	}
 	/******** HEADER ***********/
 	
 	header {
 		display: flex;
-		justify-content: space-between;
 		padding: 1em;
-		align-items: center;
 		position: relative;
 		flex-direction: column;
+		background-color: white;
+		width: 100%;
+		z-index: 2;
+		height: auto;
 	}
-	header img {
-		padding: 0px;
-	}
-	#navigation {
-		list-style: none;
-		margin: 0;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-	}
-	#navigation a {
-		display: block;
+	nav a {
 		padding: 1em;
 		color: Black;
-	}
-	#navigation a:hover {
-		color: black;
-		border-top: 1.5px solid #5CADD3;
-		height: 60px;
+		height: auto;
 		width: auto;
+	}
+	nav a:hover {
+		color: black;
+		border-top: 1px solid #5CADD3;
+		height: auto;
+		width: auto;
+		top: 0;
+	}
+	li {
+		padding: 12px;
 	}
 	/************ IMAGE BANNIERE **********/
 	
-	.slide img {
-		width: 100%;
-	}
-	.slide strong {
-		color: #5CADD3;
-	}
-	.slide h1 {
-		display: none;
-	}
-	.slide p {
-		display: none;
-	}
-	.info {
+	#slideshow {
 		display: none;
 	}
 	#services {
 		text-align: center;
-		font-size: 3.5em;
 		margin-top: 9%;
 		/**/
 	}
 	h1 {
-		font-size: 40px;
+		font-size: 2.5em;
 		font-weight: bold;
 		text-align: center;
 		padding: 15px;
@@ -75,19 +185,16 @@
 	
 	#liste p {
 		font-size: 0.3em;
-		padding-right: 15px;
 		width: 100%;
 	}
 	#services p {
-		font-size: 0.3em;
+		font-size: 1em;
 		padding: 40px;
 		line-height: 17px;
 	}
 	#portfolio p {
 		padding: 2%;
 		text-align: center;
-		font-size: 1.4em;
-		margin-top: 20px;
 	}
 	/********ICONES********/
 	
@@ -136,10 +243,6 @@
 	}
 	/********** IMAGE PC ******/
 	
-	.main {
-		display: flex;
-		padding-bottom: 150px;
-	}
 	.main img {
 		display: none;
 	}
@@ -147,46 +250,51 @@
 	
 	#liste {
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap justify-content: flex-end;
 		width: 100%;
 		font-size: 3em;
 		height: 100%;
+		padding-top: 0px;
+		flex-wrap: wrap;
 	}
 	h2 {
 		font-size: 0.3em;
 		font-weight: bold;
 	}
-	.listbox h2 {
-		font-size: 0.3em;
-		font-weight: bold;
-		width: 100%;
-		text-align: center;
-		margin-left: -15px;
-		margin-bottom: 10px;
-	}
 	.listbox {
-		margin-left: 19px;
-		width: 100%;
-		text-align: center;
-		font-size: 1.5em;
-		margin-bottom: 50px;
+		height: 110px;
+		margin: 5px;
+		width: 80%;
+		padding-left: 14px;
 	}
 	.iconbox {
-		width: 100%;
-		text-align: center;
-		font-size: 1.5em;
-		margin-bottom: 10px;
+		width: 15%;
+	}
+	.iconbox i::after {
+		background-color: #5CADD3;
+		border-radius: 37px;
+		border: 5.6px solid white;
+		content: '';
+		height: 9px;
+		position: absolute;
+		width: 9px;
+		margin-top: 5px;
 	}
 	/*********PORTFOLIO***********/
 	
 	#container {
-		width: 90%;
 		display: flex;
 		flex-wrap: wrap;
-		padding-top: 20px;
-		padding-bottom: 60px;
-		padding-left: 15%;
+		width: 100%;
+		height: 100%;
+		flex-direction: row;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.image {
+		width: 23%;
+	}
+	#portfolio {
+		background-color: #f0f0f0;
 	}
 	#portfolio img {
 		display: block;
@@ -203,10 +311,10 @@
 	.b2,
 	.b3,
 	.b4 {
-		background-color: #eaeaea;
-		border: 1px solid #eaeaea;
+		background-color: #c2c2c2;
+		border: 1px solid: #c2c2c2;
 		padding: 11px;
-		width: 90%;
+		width: 5%;
 		text-align: center;
 		font-size: 0.8em;
 	}
@@ -263,19 +371,19 @@
 	/*********FORMULAIRE*******/
 	
 	.box {
-		bottom: 460px;
+		top: 50px;
 		background-color: rgba(255, 255, 255, 0.7);
-		z-index: 4;
-		left: 2%;
+		z-index: 2;
+		left: 900px;
 		padding-bottom: 10px;
 		padding-left: 15px;
 		padding-top: 5px;
 		position: relative;
-		width: 100%;
+		width: 324px;
 		text-align: left;
 		border: 2px solid rgba(255, 255, 255, 0.7);
 		border-radius: 2px;
-		top: 100%;
+		z-index: 1;
 	}
 	.box p {
 		overflow: hidden;
@@ -307,12 +415,7 @@
 		font-weight: 500;
 		margin-top: 10px;
 	}
-	.map {
-		height: 500px;
-	}
-	div.map iframe {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+	nav li:last-of-type a {
+		border-bottom: none;
 	}
 }
