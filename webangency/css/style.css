@@ -234,7 +234,7 @@ header img {
 	height: auto;
 	text-align: left;
 	font-size: 2.2em;
-	top: 48%;
+	top: 40%;
 	left: 3.5%;
 }
 
@@ -244,22 +244,28 @@ header img {
 	font-weight: bold;
 	width: auto;
 	height: auto;
-	top: 69%;
+	top: 60%;
 	left: 4.5%;
 }
 
 @keyframes AutoSlide {
 	0% {
-		left: 0px;
+		left: 0%;
 		/*1ère image*/
+	}
+	25% {
+		left: 0%;
+		/*idem pour attente*/
 	}
 	50% {
 		left: -100%;
-		/*idem pour attente*/
+	}
+	75% {
+		left: -100%;
+		/*1ère image*/
 	}
 	100% {
 		left: 0%;
-		/*1ère image*/
 	}
 }
 
@@ -286,7 +292,7 @@ header img {
 	border-left: 20px solid #5CADD3;
 	border-top: 10px solid #5CADD3;
 	border-bottom: 10px solid #5CADD3;
-	top: 77%;
+	top: 70%;
 	left: 4.5%;
 }
 
@@ -386,11 +392,11 @@ h1 {
 
 #liste {
 	display: flex;
-	flex-direction: column;
-	width: 100px;
+	width: 34%;
 	font-size: 3em;
-	height: 100px;
-	padding-bottom: 50px;
+	height: 100%;
+	padding-top: 90px;
+	flex-wrap: wrap;
 }
 
 h2 {
@@ -402,10 +408,23 @@ h2 {
 	height: 110px;
 	margin: 5px;
 	width: 456px;
+	padding-left: 14px;
 }
 
 .iconbox {
 	width: 50px;
+}
+
+.iconbox i::after {
+	background-color: #5CADD3;
+	border-radius: 37px;
+	border: 5.6px solid white;
+	content: '';
+	height: 9px;
+	position: absolute;
+	width: 9px;
+	margin-top: 5px;
+}
 }
 /*********PORTFOLIO***********/
 
@@ -417,24 +436,20 @@ h2 {
 	padding-left: 145px;
 	padding-right: 5%;
 }
-
 #portfolio {
 	background-color: #f0f0f0;
 }
-
 #portfolio img {
 	display: block;
 	width: 23.2vw;
 	padding-left: 15%;
 	padding-bottom: 10%;
 }
-
 #boutons {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
 .b1,
 .b2,
 .b3,
@@ -446,17 +461,14 @@ h2 {
 	text-align: center;
 	font-size: 0.8em;
 }
-
 .b1 {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
-
 .b4 {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
-
 .b1:hover,
 .b2:hover,
 .b3:hover,
@@ -469,7 +481,6 @@ h2 {
 	color: white;
 	font-weight: 500;
 }
-
 .b1:hover:before,
 .b2:hover:before,
 .b3:hover:before,
@@ -489,11 +500,9 @@ h2 {
 	width: 100%;
 	height: 500px;
 }
-
 #map {
 	position: absolute;
 }
-
 #blue {
 	background-color: #5CADD3;
 	position: absolute;
@@ -519,35 +528,29 @@ h2 {
 	border-radius: 2px;
 	z-index: 1;
 }
-
 .box p {
 	overflow: hidden;
 	width: 290px;
 }
-
 .box h3 {
 	font-size: 1.2em;
 	font-weight: bold;
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-
 .box span {
 	font-weight: bold;
 	font-size: 0.9em;
 }
-
 label {
 	margin-top: 10px;
 	display: block;
 }
-
 textarea {
 	margin-top: 20px;
 	width: 290px;
 	height: 164px;
 }
-
 input[type="submit"] {
 	background-color: #5CADD3;
 	border-radius: 5px;
@@ -561,31 +564,33 @@ input[type="submit"] {
 	header {
 		flex-direction: column;
 	}
+	
 	header > a {
 		text-align: center;
 	}
+	
 	#navigation {
 		justify-content: center;
 	}
 }
-
 @media all and (max-width: 600px) {
 	#navigation {
 		-webkit-flex-flow: column wrap;
 		flex-flow: column wrap;
 		padding: 0;
 	}
+	
 	#navigation a {
 		text-align: center;
 		padding: 10px;
 		border-top: 1px solid rgba(255, 255, 255, 0.3);
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
+	
 	.main {
 		padding-bottom: 300px;
 	}
 }
-
 @media all and (min-width: 240px) {
 	.ligne {
 		left: 50%;
@@ -594,7 +599,6 @@ input[type="submit"] {
 		width: 140px;
 	}
 }
-
 #navigation li:last-of-type a {
 	border-bottom: none;
 }
