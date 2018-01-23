@@ -267,6 +267,7 @@ nav a:hover {
 #slideshow {
 	position: relative;
 	height: 600px;
+	overflow: hidden;
 }
 
 .info {
@@ -394,13 +395,11 @@ h2 {
 
 .listbox {
 	height: 110px;
-	margin: 5px;
-	width: 456px;
-	padding-left: 14px;
+	width: 80%;
 }
 
 .iconbox {
-	width: 50px;
+	width: 20%;
 }
 
 .iconbox i::after {
@@ -451,7 +450,7 @@ h2 {
 .b3,
 .b4 {
 	background-color: #c2c2c2;
-	border: 1px solid: #c2c2c2;
+	border: 1px solid #c2c2c2;
 	padding: 11px;
 	width: 5%;
 	text-align: center;
