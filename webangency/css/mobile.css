@@ -1,157 +1,10 @@
-@media all and (max-device-width: 480px) {
-	html,
-	body,
-	div,
-	span,
-	applet,
-	object,
-	iframe,
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p,
-	blockquote,
-	pre,
-	a,
-	abbr,
-	acronym,
-	address,
-	big,
-	cite,
-	code,
-	del,
-	dfn,
-	em,
-	img,
-	ins,
-	kbd,
-	q,
-	s,
-	samp,
-	small,
-	strike,
-	strong,
-	sub,
-	sup,
-	tt,
-	var,
-	u,
-	i,
-	center,
-	dl,
-	dt,
-	dd,
-	ol,
-	ul,
-	li,
-	fieldset,
-	form,
-	label,
-	legend,
-	table,
-	caption,
-	tbody,
-	tfoot,
-	thead,
-	tr,
-	th,
-	td,
-	article,
-	aside,
-	canvas,
-	details,
-	embed,
-	figure,
-	figcaption,
-	footer,
-	header,
-	hgroup,
-	menu,
-	nav,
-	output,
-	ruby,
-	section,
-	summary,
-	time,
-	mark,
-	audio,
-	video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-		box-sizing: border-box;
-	}
-	/* HTML5 display-role reset for older browsers */
-	
-	article,
-	aside,
-	details,
-	figcaption,
-	figure,
-	footer,
-	header,
-	hgroup,
-	menu,
-	nav,
-	section {
-		display: block;
-	}
-	body {
-		line-height: 1;
-	}
-	ol,
-	ul {
-		list-style: none;
-	}
-	blockquote,
-	q {
-		quotes: none;
-	}
-	blockquote:before,
-	blockquote:after,
-	q:before,
-	q:after {
-		content: '';
-		content: none;
-	}
-	table {
-		border-collapse: collapse;
-		border-spacing: 0;
-	}
-	a {
-		text-decoration: none;
-	}
-	/******** POLICE **********/
-	
-	@font-face {
-		font-family: 'fontawesome';
-		src: url('/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/fontawesome-webfont.woff') format('woff'), url('/fonts/fontawesome-webfont.ttf') format('truetype'), url('/fonts/fontawesome-webfont.svg') format('svg');
-	}
-	body {
-		font-family: 'fontawesome', Fallback, sans-serif;
-	}
-	/******** HEADER ***********/
-	
+@media screen and (max-width: 480px) {
 	header {
-		display: flex;
-		padding: 1em;
 		position: relative;
-		flex-direction: column;
-		background-color: white;
-		width: 100%;
-		z-index: 2;
-		height: auto;
-		align-items: center;
 		flex-direction: column;
 	}
 	header img {
-		padding: 5%;
+		padding: 0;
 	}
 	#navigation {
 		display: flex;
@@ -159,30 +12,70 @@
 		flex-flow: column wrap;
 		padding: 0;
 	}
-	li {
-		flex-wrap: wrap;
-		flex-direction: column;
+	#navigation li {
+		padding: 12%;
+		text-align: center;
 	}
-	nav a {
-		padding: 1em;
-		color: Black;
-		height: auto;
-		width: auto;
-	}
-	nav a:hover {
-		color: black;
-		border-top: 1px solid #5CADD3;
-		height: auto;
-		width: auto;
-		top: 0;
-	}
-	li {
-		padding: 12px;
+	nav {
+		padding: 0;
 	}
 	/************ IMAGE BANNIERE **********/
 	
 	#slideshow {
-		display: none;
+		position: relative;
+		height: 300px;
+		overflow: hidden;
+	}
+	#slide {
+		padding-top: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		margin: 0;
+		position: static;
+	}
+	li.fille {
+		width: auto;
+		margin-right: -4%;
+	}
+	#slide img {
+		width: 400px;
+	}
+	#slidetext h1 {
+		position: absolute;
+		text-transform: uppercase;
+		color: white;
+		letter-spacing: -0.05em;
+		width: auto;
+		height: auto;
+		text-align: left;
+		top: 34%;
+		left: -1.5%;
+		font-size: 1em;
+	}
+	#slidetext p {
+		position: absolute;
+		color: white;
+		font-weight: bold;
+		width: auto;
+		height: auto;
+		top: 53%;
+		left: 2.5%;
+		font-size: 0.5em;
+	}
+	.info {
+		background-color: #5CADD3;
+		border-radius: 2px;
+		color: white;
+		font-weight: 500;
+		position: absolute;
+		font-size: 0.6em;
+		border-right: 10px solid #5CADD3;
+		border-left: 10px solid #5CADD3;
+		border-top: 5px solid #5CADD3;
+		border-bottom: 5px solid #5CADD3;
+		top: 60%;
+		left: 2.5%;
 	}
 	#services {
 		text-align: center;
@@ -197,6 +90,9 @@
 	}
 	/****** PARAGRAPHE DES DIFFERENTES SECTIONS *******/
 	
+	#section {
+		display: flex;
+	}
 	#liste p {
 		font-size: 0.3em;
 		width: 100%;
@@ -210,53 +106,11 @@
 		padding: 2%;
 		text-align: center;
 	}
-	/********ICONES********/
-	
-	.fa.fa-line-chart,
-	.fa.fa-cubes,
-	.fa.fa-pie-chart {
-		font-size: 0.5em;
-		color: #5CADD3;
-		border: 1.4px solid #b2b2b299;
-		border-radius: 50%;
-	}
-	.fa {
-		display: inline-block;
-		font: normal normal normal 14px/1 FontAwesome;
-		padding: 11px;
-		border-radius: 50%;
-	}
-	/******BARRE SEPARATION SERVICES/CONTENU*******/
-	
-	.ligne {
-		background-color: #d9d9d9;
-		content: '';
-		height: 1px;
-		left: 50%;
-		position: absolute;
-		transform: translateX(-50%);
-		width: 140px;
-	}
-	.ligne .point {
-		background-color: #5CADD3;
-		border-radius: 60px;
-		border: 3.5px solid white;
-		content: '';
-		height: 15px;
-		left: 50%;
-		position: absolute;
-		transform: translate(-50%, 50%);
-		width: 15px;
-		top: -14px;
-	}
-	::before ligne {
-		padding: 4%;
-	}
-	::after ligne {
-		padding: 4%;
-	}
 	/********** IMAGE PC ******/
 	
+	.main {
+		padding-bottom: 0;
+	}
 	.main img {
 		display: none;
 	}
@@ -305,21 +159,21 @@
 		padding-bottom: 50px;
 	}
 	.image {
-		width: 23%;
+		width: 50%;
 	}
 	#portfolio {
 		background-color: #f0f0f0;
 	}
 	#portfolio img {
 		display: block;
-		width: 23.2vw;
-		padding-left: 15%;
-		padding-bottom: 10%;
+		width: 100%;
+		padding-left: 4%;
+		padding-bottom: 4%;
 	}
 	#boutons {
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
+		flex-direction: column;
 	}
 	.b1,
 	.b2,
@@ -328,17 +182,17 @@
 		background-color: #c2c2c2;
 		border: 1px solid: #c2c2c2;
 		padding: 11px;
-		width: 5%;
+		width: 100%;
 		text-align: center;
 		font-size: 0.8em;
 	}
 	.b1 {
-		border-top-left-radius: 5px;
-		border-bottom-left-radius: 5px;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
 	}
 	.b4 {
-		border-top-right-radius: 5px;
-		border-bottom-right-radius: 5px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
 	}
 	.b1:hover,
 	.b2:hover,
@@ -385,51 +239,6 @@
 	/*********FORMULAIRE*******/
 	
 	.box {
-		top: 50px;
-		background-color: rgba(255, 255, 255, 0.7);
-		z-index: 2;
-		left: 900px;
-		padding-bottom: 10px;
-		padding-left: 15px;
-		padding-top: 5px;
-		position: relative;
-		width: 324px;
-		text-align: left;
-		border: 2px solid rgba(255, 255, 255, 0.7);
-		border-radius: 2px;
-		z-index: 1;
-	}
-	.box p {
-		overflow: hidden;
-		width: 290px;
-	}
-	.box h3 {
-		font-size: 1.2em;
-		font-weight: bold;
-		padding-bottom: 10px;
-		padding-top: 10px;
-	}
-	.box span {
-		font-weight: bold;
-		font-size: 0.9em;
-	}
-	label {
-		margin-top: 10px;
-		display: block;
-	}
-	textarea {
-		margin-top: 20px;
-		width: 290px;
-		height: 164px;
-	}
-	input[type="submit"] {
-		background-color: #5CADD3;
-		border-radius: 5px;
-		color: white;
-		font-weight: 500;
-		margin-top: 10px;
-	}
-	nav li:last-of-type a {
-		border-bottom: none;
+		left: 0px;
 	}
 }
