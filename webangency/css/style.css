@@ -197,14 +197,6 @@ nav a:hover {
 	animation-timing-function: ease-in-out;
 }
 
-.fa.fa-angle-right.fa-2x {
-	display: none;
-}
-
-.fa.fa-angle-left.fa-2x {
-	display: none;
-}
-
 @media screen and (min-width: 1223px) {
 	#slide {
 		margin: 0;
@@ -295,7 +287,7 @@ nav a:hover {
 
 #services {
 	text-align: center;
-	margin-top: 9%;
+	padding-top: 150px;
 	/**/
 }
 
@@ -320,7 +312,7 @@ h1 {
 }
 
 #portfolio p {
-	padding: 2%;
+	padding-top: 1%;
 	text-align: center;
 }
 /********ICONES********/
@@ -383,7 +375,7 @@ h1 {
 	display: flex;
 	width: 50%;
 	height: 50%;
-	padding-top: 50px;
+	padding: 8%
 }
 /********* LISTES SERVICES *******/
 
@@ -422,12 +414,18 @@ h2 {
 }
 /*********PORTFOLIO***********/
 
+#portfolio {
+	background-color: #80808021;
+	padding-top: 150px;
+}
+
 .ff-container {
 	width: 100%;
 	height: 100%;
 	padding-bottom: 5%;
 	display: flex;
 	flex-wrap: wrap;
+	background-color: #80808021;
 }
 
 .ff-container label {
@@ -479,7 +477,6 @@ label.ff-label-type-all {
 
 .ff-items a {
 	position: relative;
-	background: #fff;
 	display: block;
 	width: 95%;
 	height: 100%;

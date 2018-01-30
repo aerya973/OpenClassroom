@@ -43,36 +43,6 @@
 	.garcon {
 		display: none;
 	}
-	.fa.fa-angle-right.fa-2x {
-		z-index: 2;
-		background: rgba(0, 0, 0, .4);
-		color: #fff;
-		text-decoration: none;
-		height: 57px;
-		width: 32px;
-		border-radius: 45px;
-		position: absolute;
-		top: 45%;
-		left: 92%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.fa.fa-angle-left.fa-2x {
-		z-index: 2;
-		background: rgba(0, 0, 0, .4);
-		color: #fff;
-		text-decoration: none;
-		height: 57px;
-		width: 32px;
-		border-radius: 45px;
-		position: absolute;
-		top: 45%;
-		left: 0%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
 	#slide img {
 		width: 100%;
 	}
@@ -241,6 +211,27 @@
 	/*********FORMULAIRE*******/
 	
 	.box {
-		left: 0px;
+		background-color: #80808021;
+		;
+		left: 0;
+		padding-bottom: 10px;
+		padding-left: 0;
+		padding-top: 5px;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		border: 0;
+		border-radius: 0px;
+		z-index: 1;
+		line-height: 1.5;
+		margin-top: 0;
+	}
+	.box p {
+		overflow: hidden;
+		width: 100%;
+	}
+	textarea {
+		width: 75%;
+		height: 50%;
 	}
 }
