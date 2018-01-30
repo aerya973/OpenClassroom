@@ -34,12 +34,47 @@
 		margin: 0;
 		position: static;
 	}
-	li.fille {
-		width: auto;
+	#slide img {
+		width: 100%;
+	}
+	.fille {
 		margin-right: -4%;
 	}
+	.garcon {
+		display: none;
+	}
+	.fa.fa-angle-right.fa-2x {
+		z-index: 2;
+		background: rgba(0, 0, 0, .4);
+		color: #fff;
+		text-decoration: none;
+		height: 57px;
+		width: 32px;
+		border-radius: 45px;
+		position: absolute;
+		top: 45%;
+		left: 92%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.fa.fa-angle-left.fa-2x {
+		z-index: 2;
+		background: rgba(0, 0, 0, .4);
+		color: #fff;
+		text-decoration: none;
+		height: 57px;
+		width: 32px;
+		border-radius: 45px;
+		position: absolute;
+		top: 45%;
+		left: 0%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	#slide img {
-		width: 400px;
+		width: 100%;
 	}
 	#slidetext h1 {
 		position: absolute;

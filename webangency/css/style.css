@@ -197,6 +197,14 @@ nav a:hover {
 	animation-timing-function: ease-in-out;
 }
 
+.fa.fa-angle-right.fa-2x {
+	display: none;
+}
+
+.fa.fa-angle-left.fa-2x {
+	display: none;
+}
+
 @media screen and (min-width: 1223px) {
 	#slide {
 		margin: 0;
@@ -577,7 +585,7 @@ iframe {
 .box {
 	background-color: rgba(255, 255, 255, 0.7);
 	z-index: 2;
-	left: 900px;
+	left: 65%;
 	padding-bottom: 10px;
 	padding-left: 15px;
 	padding-top: 5px;
@@ -587,6 +595,7 @@ iframe {
 	border: 2px solid rgba(255, 255, 255, 0.7);
 	border-radius: 2px;
 	z-index: 1;
+	margin-top: 7%;
 }
 
 .box p {
