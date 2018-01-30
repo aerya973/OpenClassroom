@@ -423,21 +423,19 @@ h2 {
 }
 
 .ff-container label {
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-	width: 25%;
+	width: 7%;
 	height: 30px;
 	cursor: pointer;
-	color: #777;
-	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 	line-height: 33px;
-	font-size: 19px;
-	background: linear-gradient(top, #ffffff 1%, #eaeaea 100%);
-	float: left;
-	box-shadow: 0px 0px 0px 1px #aaa, 1px 0px 0px 0px rgba(255, 255, 255, 0.9) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	box-shadow: 0px 0px 0px 4px #D9D9D9, 1px 0px 0px 0px #D9D9D9, 0px 1px 2px #D9D9D9;
+	text-align: center;
+	background-color: #d9d9d9;
 }
 
 .ff-container label.ff-label-type-all {
 	border-radius: 3px 0px 0px 3px;
+	margin-left: 36%;
 }
 
 .ff-container label.ff-label-type-3 {
@@ -448,10 +446,9 @@ h2 {
 .ff-container input.ff-selector-type-1:checked ~ label.ff-label-type-1,
 .ff-container input.ff-selector-type-2:checked ~ label.ff-label-type-2,
 .ff-container input.ff-selector-type-3:checked ~ label.ff-label-type-3 {
-	background: linear-gradient(top, #646d93 0%, #7c87ad 100%);
-	color: #424d71;
-	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
-	box-shadow: 0px 0px 0px 1px #40496e, 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	color: white;
+	box-shadow: 0px 0px 0px 4px #5cadd3, 0px 2px 2px #5cadd3 inset;
+	background-color: #5cadd3;
 }
 
 .ff-container input {
@@ -468,24 +465,31 @@ h2 {
 .ff-items a {
 	position: relative;
 	background: #fff;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-	margin: 4px;
+	display: block;
+	width: 95%;
+	height: 100%;
+	padding-top: 10px;
 }
 
 .ff-items a span {
-	background: rgba(113, 123, 161, 0.9);
-	font-style: italic;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.66);
 	color: #fff;
 	font-weight: bold;
 	position: absolute;
-	bottom: 10px;
-	left: 10px;
-	height: 0px;
-	overflow: hidden;
+	bottom: 0;
+	height: 0;
 	opacity: 0;
-	text-align: center;
+	text-align: left;
 	text-shadow: 1px 1px 1px #303857;
 	transition: all 0.3s ease-in-out;
+	padding-top: 5%;
+	padding-left: 5%;
+	line-height: 1.5;
+}
+
+.ff-items a span p {
+	font-weight: normal;
 }
 
 .ff-items a:hover span {
@@ -493,9 +497,23 @@ h2 {
 	opacity: 1;
 }
 
+.fa-eye {
+	margin-left: 78%;
+	display: block;
+	border: 2px solid white;
+	margin-right: 4.5%;
+	margin-top: -16%;
+	position: absolute;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #5cadd3;
+	color: white;
+	text-shadow: 1px 2px 3px black;
+}
+
 .ff-items li img {
 	display: block;
-	width: 92%;
+	width: 100%;
 }
 
 .ff-items li {
