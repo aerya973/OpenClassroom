@@ -235,3 +235,66 @@
 		height: 50%;
 	}
 }
+
+@media screen and (min-width: 480px) and (max-width: 1224px) {
+	header img {
+		width: 100%;
+		padding: 10px;
+	}
+	nav {
+		padding-right: 0;
+	}
+	#slideshow {
+		height: 400px;
+	}
+	#slide {
+		width: 200%;
+	}
+	#slide img {
+		padding: 0;
+	}
+	#slidetext h1 {
+		font-size: 1.6em;
+		top: 120px;
+		left: 0px;
+	}
+	#slidetext p {
+		top: 195px;
+		left: 18px;
+		font-size: 0.8em;
+	}
+	.info {
+		font-size: 1em;
+		border-right: 5px solid #5CADD3;
+		border-left: 5px solid #5CADD3;
+		border-top: 5px solid #5CADD3;
+		border-bottom: 5px solid #5CADD3;
+		top: 217px;
+		left: 17px;
+	}
+	#services {
+		padding-top: 15%;
+	}
+	#liste {
+		width: 100%;
+		padding-top: 0;
+	}
+	.iconbox {
+		text-align: center;
+	}
+	.main img {
+		display: none;
+	}
+	#liste p {
+		width: 100%;
+	}
+	#portfolio h1 {
+		padding-top: 2%;
+	}
+	.ff-container {
+		padding-bottom: 21%;
+	}
+	.box {
+		left: 0;
+	}
+}
