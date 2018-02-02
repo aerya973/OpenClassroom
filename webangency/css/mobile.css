@@ -299,7 +299,7 @@
 		padding-top: 20px;
 	}
 	.ff-container {
-		padding-bottom: 21%;
+		padding-bottom: 50px;
 	}
 	label.ff-label-type-all {
 		margin-left: 14%;
@@ -310,5 +310,39 @@
 	}
 	.box {
 		left: 0;
+		background-color: #80808021;
+		padding-left: 0;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		z-index: 1;
+		line-height: 1.5;
+		margin-top: 0;
+		padding-bottom: 29px;
+		border: 0;
+	}
+	input.bouton_submit {
+		border: 5px solid #5cadd3;
+		border-radius: 15px;
+	}
+	.box p {
+		width: 100%;
+		font-size: 1.5em;
+	}
+	.box h3 {
+		font-size: 3.5em;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	input {
+		font-size: 0.7em;
+		border-radius: 3px;
+		border: 1px solid white;
+		text-align: center;
+	}
+	textarea {
+		width: 380px;
+		border: 1px solid white;
+		padding-bottom: 11px;
 	}
 }
