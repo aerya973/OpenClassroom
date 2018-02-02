@@ -210,6 +210,14 @@ nav a:hover {
 	}
 }
 
+li .fille {
+	width: 100%;
+}
+
+li .garcon {
+	width: 100%;
+}
+
 #slide img {
 	width: 100%;
 	height: 100%;
@@ -312,8 +320,9 @@ h1 {
 }
 
 #portfolio p {
-	padding-top: 1%;
+	padding-top: 40px;
 	text-align: center;
+	padding-bottom: 40px;
 }
 /********ICONES********/
 
@@ -612,6 +621,10 @@ iframe {
 	font-size: 0.9em;
 }
 
+.box .ligne {
+	display: none;
+}
+
 label {
 	margin-top: 10px;
 	display: block;
@@ -621,6 +634,16 @@ textarea {
 	margin-top: 20px;
 	width: 290px;
 	height: 164px;
+	border: 0.9px solid lightgray;
+	border-radius: 5px;
+}
+
+input {
+	border: 0.9px solid lightgray;
+	border-radius: 5px;
+	padding-left: 6px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 
 input[type="submit"] {
