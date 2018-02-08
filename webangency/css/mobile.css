@@ -353,6 +353,15 @@
 		width: 18%;
 		font-size: 0.9em;
 	}
+	.ff-item-type-1 {
+		width: 50%;
+	}
+	.ff-item-type-2 {
+		width: 50%;
+	}
+	.ff-item-type-3 {
+		width: 50%;
+	}
 	.box .ligne {
 		margin-top: 93px;
 	}
