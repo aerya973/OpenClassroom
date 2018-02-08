@@ -293,9 +293,9 @@ li .garcon {
 	left: 4.5%;
 }
 
-#services {
-	text-align: center;
-	padding-top: 150px;
+.listbox p {
+	line-height: 18px;
+	padding-top: 10px;
 	/**/
 }
 
@@ -309,14 +309,8 @@ h2 {
 
 #liste p {
 	font-size: 0.3em;
-	padding-right: 15px;
-	width: 400px;
-}
-
-#services p {
-	font-size: 1em;
-	padding: 40px;
-	line-height: 17px;
+	width: 80%;
+	padding-bottom: 30px;
 }
 
 #portfolio p {
@@ -390,9 +384,14 @@ h2 {
 }
 /********* LISTES SERVICES *******/
 
+.speech {
+	text-align: center;
+	padding-top: 30px;
+}
+
 #liste {
 	display: flex;
-	width: 34%;
+	width: 50%;
 	font-size: 3em;
 	height: 100%;
 	padding-top: 90px;
@@ -405,12 +404,13 @@ h3 {
 }
 
 .listbox {
-	height: 110px;
+	height: 100%;
 	width: 80%;
 }
 
 .iconbox {
-	width: 20%;
+	width: 15%;
+	text-align: center;
 }
 
 .iconbox i::after {

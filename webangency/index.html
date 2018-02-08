@@ -20,7 +20,7 @@
 				<li class="Acceuil"><a href="#slideshow">Accueil</a></li>
 				<li class="Services"><a href="#services">Services</a></li>
 				<li class="Portfolio"><a href="#portfolio">Portfolio</a></li>
-				<li class="Contact"><a href="#contact">Contact</a></li>
+				<li class="Contact"><a href="#form">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -44,15 +44,12 @@
 
 
 	<!-- Content -->
-	<section>
-		<div id="services">
-			<h2>NOS SERVICES</h2>
-			<div class="ligne">
-				<div class="point"></div>
-			</div>
-			<p>Besoin de créer ou de rafraîchir votre site Web?</p>
+	<section id="services">
+		<h2>NOS SERVICES</h2>
+		<div class="ligne">
+			<div class="point"></div>
 		</div>
-
+		<p class="speech">Besoin de créer ou de rafraîchir votre site Web?</p>
 		<div class="main">
 			<img src="/images/main-feature.png" alt="ordinateur">
 
@@ -86,16 +83,13 @@
 	</section>
 
 	<!-- Portfolio -->
-	<section>
-		<div id="portfolio">
-			<h2>NOS PROJETS</h2>
-			<div class="ligne">
-				<div class="point"></div>
-			</div>
-			<p>Jetez un œil à nos créations pour vous faire un avis ! A la WebAgency, nous sommes à l’écoutes de vos besoins et mettrons tout en œuvre pour réaliser vos projets Web. </p>
-
+	<div id="portfolio">
+		<h2>NOS PROJETS</h2>
+		<div class="ligne">
+			<div class="point"></div>
 		</div>
-	</section>
+		<p>Jetez un œil à nos créations pour vous faire un avis ! A la WebAgency, nous sommes à l’écoutes de vos besoins et mettrons tout en œuvre pour réaliser vos projets Web. </p>
+	</div>
 
 	<section class="ff-container">
 		<input id="select-type-all" name="radio-set-1" type="radio" class="ff-selector-type-all" checked="checked" />
@@ -205,7 +199,7 @@
 					<br>Tel: 01 02 03 04 05</p>
 				<p>
 					<label for="pseudo"></label>
-					<input type="text" name="nom" id="nom" placeholder="Nom" size="38" maxlength="10" />
+					<input type="text" name="nom" id="pseudo" placeholder="Nom" size="38" maxlength="10" />
 				</p>
 				<p>
 					<label for="email"></label>
@@ -215,7 +209,7 @@
 					<label for="sujet"></label>
 					<input type="text" name="sujet" id="sujet" placeholder="Sujet" size="38" maxlength="10" />
 				</p>
-				<textarea name="ameliorer" id="ameliorer" rows="10" cols="34.5" placeholder="Message">
+				<textarea name="ameliorer" id="ameliorer" rows="10" cols="34" placeholder="Message">
 				</textarea>
 				<p>
 					<input type="submit" value="Envoyer" class="bouton_submit" />
