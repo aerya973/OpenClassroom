@@ -299,7 +299,7 @@ li .garcon {
 	/**/
 }
 
-h1 {
+h2 {
 	font-size: 3.5em;
 	font-weight: bold;
 	text-align: center;
@@ -399,7 +399,7 @@ h1 {
 	flex-wrap: wrap;
 }
 
-h2 {
+h3 {
 	font-size: 0.3em;
 	font-weight: bold;
 }
@@ -494,7 +494,7 @@ label.ff-label-type-all {
 	padding-top: 10px;
 }
 
-.ff-items a span {
+.ff-items a div {
 	width: 100%;
 	background: rgba(0, 0, 0, 0.66);
 	color: #fff;
@@ -511,11 +511,11 @@ label.ff-label-type-all {
 	line-height: 1.5;
 }
 
-.ff-items a span p {
+.ff-items a div p {
 	font-weight: normal;
 }
 
-.ff-items a:hover span {
+.ff-items a:hover div {
 	height: 80px;
 	opacity: 1;
 }
@@ -568,9 +568,9 @@ label.ff-label-type-all {
 	opacity: 0.1;
 }
 
-.ff-container input.ff-selector-type-1:checked ~ .ff-items li:not(.ff-item-type-1) span,
-.ff-container input.ff-selector-type-2:checked ~ .ff-items li:not(.ff-item-type-2) span,
-.ff-container input.ff-selector-type-3:checked ~ .ff-items li:not(.ff-item-type-3) span {
+.ff-container input.ff-selector-type-1:checked ~ .ff-items li:not(.ff-item-type-1) div,
+.ff-container input.ff-selector-type-2:checked ~ .ff-items li:not(.ff-item-type-2) div,
+.ff-container input.ff-selector-type-3:checked ~ .ff-items li:not(.ff-item-type-3) div {
 	display: none;
 }
 /*********MAP**********/
@@ -618,7 +618,7 @@ iframe {
 	padding-top: 10px;
 }
 
-.box span {
+.box div {
 	font-weight: bold;
 	font-size: 0.9em;
 }
