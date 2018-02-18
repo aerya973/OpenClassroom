@@ -466,7 +466,7 @@
 		padding-top: 0;
 		padding-bottom: 15px;
 	}
-	
+
 	.ff-container input.ff-selector-type-all:checked~label.ff-label-type-all:after,
 	.ff-container input.ff-selector-type-1:checked~label.ff-label-type-1:after,
 	.ff-container input.ff-selector-type-2:checked~label.ff-label-type-2:after,
