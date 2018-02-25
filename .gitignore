@@ -24,4 +24,4 @@
 
 # Ignore le contenu de "themes" sauf le dossier de NOTRE thème
 /wordpress/wp-content/themes/*
-!/wordpress/wp-content/themes/mon-theme/
+!/wordpress/wp-content/themes/oc-theme/
