@@ -1,0 +1,34 @@
+# STRONG HTACCESS PROTECTION
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+    order allow,deny
+    deny from all
+</Files>
+
+# DIRECTORY CUSTOMIZATION
+<IfModule mod_autoindex.c>
+
+    # SET INDEX OPTIONS
+    IndexOptions SuppressLastModified SuppressSize IgnoreCase FancyIndexing FoldersFirst NameWidth=* DescriptionWidth=* SuppressHTMLPreamble IconHeight=32 IconWidth=32 IconsAreLinks
+
+    # SET DISPLAY ORDER
+    IndexOrderDefault Descending Name
+
+    # IGNORE THESE FILES
+    IndexIgnore header.html footer.html favicon.ico .htaccess .ftpquota .DS_Store icons *.log *,v *,t .??* *~ *# README.md
+
+    # SPECIFY HEADER FILE
+    HeaderName header.html
+     
+    # SPECIFY FOOTER FILE
+    ReadmeName footer.html
+    
+    # CUSTOM IMAGE ICONS
+    AddIcon /icons/blank.gif ^^DIRECTORY^^
+    #AddIcon /icons/www.png ^^DIRECTORY^^
+    
+    # FOLDER DESCRIPTIONS
+    AddDescription "[<span class='description'>Projet 1</span>]" webangency
+    AddDescription "[<span class='description'>Projet 2</span>]" wordpress
+
+</IfModule>
+
