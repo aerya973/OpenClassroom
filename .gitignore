@@ -23,10 +23,5 @@ wordpress/wp-content/mu-plugins/*
 !wordpress/wp-content/mu-plugins/important.php
 
 # Ignore le contenu de "themes" sauf le dossier de NOTRE thème
-<<<<<<< HEAD
 /wordpress/wp-content/themes/*
 !/wordpress/wp-content/themes/oc-theme/
-=======
-wordpress/wp-content/themes/*
-!wordpress/wp-content/themes/mon-theme/
->>>>>>> 07d10f5714cdc450899863c6ef9b08759a0f711d
