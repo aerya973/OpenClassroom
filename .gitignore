@@ -1,27 +1,27 @@
 .c9
 *.log
 
-
 # Wordpress
+!wordpress/
 
 # Ignore tout à la racine, sauf .gitignore et "wp-content"
 wordpress/*
-!wp-content
+!wordpress/wp-content
 
 # Ignore le contenu de "wp-content" sauf "plugins", "themes" et "mu-plugins"
 wordpress/wp-content/*
-!wp-content/plugins/
-!wp-content/themes/
-!wp-content/mu-plugins/
+!wordpress/wp-content/plugins/
+!wordpress/wp-content/themes/
+!wordpress/wp-content/mu-plugins/
 
 # Ignore le contenu de "plugins" sauf le dossier de NOTRE plugin personnalisé
 # (la ligne ! sera à répêter pour chaque plugin à commiter...)
 wordpress/wp-content/plugins/*
-!wp-content/plugins/mon-plugin/
+!wordpress/wp-content/plugins/mon-plugin/
 # et du "must-use" nommé ici "important.php"
 wordpress/wp-content/mu-plugins/*
-!wp-content/mu-plugins/important.php
+!wordpress/wp-content/mu-plugins/important.php
 
 # Ignore le contenu de "themes" sauf le dossier de NOTRE thème
 wordpress/wp-content/themes/*
-!wp-content/themes/mon-theme/
+!wordpress/wp-content/themes/mon-theme/
