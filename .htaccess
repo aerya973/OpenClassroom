@@ -27,7 +27,7 @@
     #AddIcon /icons/www.png ^^DIRECTORY^^
     
     # FOLDER DESCRIPTIONS
-    AddDescription "[<span class='description'>Projet 1</span>]" webangency
+    AddDescription "[<span class='description'>Projet 1</span>]" webagency
     AddDescription "[<span class='description'>Projet 2</span>]" wordpress
 
 </IfModule>
