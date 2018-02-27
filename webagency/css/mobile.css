@@ -161,7 +161,7 @@
 	/*********PORTFOLIO***********/
 	#portfolio {
 		padding-top: 0;
-		background-color: 0;
+		background-color: transparent;
 	}
 	.ff-container label {
 		width: 100%;
@@ -231,7 +231,7 @@
 	}
 	.box {
 		left: 0;
-		background-color: #80808021;
+		background-color: #efefef;
 		padding-left: 0;
 		position: relative;
 		width: 100%;
@@ -376,7 +376,7 @@
 	}
 	.box {
 		left: 0;
-		background-color: #80808021;
+		background-color: #efefef;
 		padding-left: 0;
 		position: relative;
 		width: 100%;

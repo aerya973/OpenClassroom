@@ -309,6 +309,19 @@ h2 {
 	padding: 15px;
 }
 
+#timeline {
+	position: absolute;
+	background: #999;
+	bottom: 15px;
+	left: 15px;
+	height: 1px;
+	background: rgb(214, 98, 13);
+	background: rgba(214, 98, 13, .8);
+	width: 0;
+	/* fonction d'animation */
+	animation: timeliner 32s infinite;
+}
+
 /****** PARAGRAPHE DES DIFFERENTES SECTIONS *******/
 
 #liste p {
@@ -332,7 +345,7 @@ h2 {
 .fa.fa-pie-chart {
 	font-size: 0.5em;
 	color: #5CADD3;
-	border: 1.4px solid #b2b2b299;
+	border: 1.4px solid #d5d5d5;
 	border-radius: 50%;
 }
 
@@ -368,11 +381,11 @@ h2 {
 	top: -14px;
 }
 
-::before ligne {
+ligne:before {
 	padding: 4%;
 }
 
-::after ligne {
+ligne:after {
 	padding: 4%;
 }
 
@@ -445,7 +458,7 @@ h3 {
 	padding-bottom: 5%;
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #80808021;
+	background-color: #efefef;
 }
 
 .ff-container label {
@@ -688,7 +701,7 @@ input[type="submit"] {
 	border-top: 3px solid #5CADD3;
 	border-bottom: 3px solid #5CADD3;
 	margin-top: 5px;
-	cursor:pointer;
+	cursor: pointer;
 }
 
 nav li:last-of-type a {
