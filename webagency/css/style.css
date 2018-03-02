@@ -259,11 +259,11 @@ li .garcon {
 	background-color: #5cadd3;
 	height: 6px;
 	width: 0;
-	animation: timeliner 10s infinite;
+	animation: timeliner 9s infinite;
 	animation-timing-function: ease-in-out;
 	margin-top: 5px;
 	z-index: 1;
-	bottom: 260px;
+	bottom: 32.8%;
 }
 
 .radio-none {
@@ -299,21 +299,21 @@ li .garcon {
 	border-top-left-radius: 140px;
 }
 
-}
 
 @keyframes timeliner {
 	0%,
-	25%,
-	50%,
-	75%,
-	100% {
-		width: 50px;
-	}
 	20%,
-	45%,
+	30%,
+	40%,
+	50% {
+		width: 0px;
+	}
+
+	60%,
 	70%,
+	80%,
 	90% {
-		width: 300px;
+		width: 200px;
 	}
 }
 
@@ -486,7 +486,7 @@ h3 {
 	text-align: center;
 }
 
-.iconbox i::after {
+.iconbox i:after {
 	background-color: #5CADD3;
 	border-radius: 37px;
 	border: 5.6px solid white;

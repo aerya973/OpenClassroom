@@ -88,6 +88,10 @@
 		left: 2.5%;
 	}
 
+	#timeline {
+		display: none;
+	}
+
 	.fa.fa-angle-right,
 	.fa.fa-angle-left {
 		display: none;
@@ -429,7 +433,17 @@
 	}
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1224px) {
+@media screen and (min-width: 480px) and (max-width: 1224px) {
+	#timeline {
+		display: none;
+	}
+	.fa.fa-angle-right,
+	.fa-angle-left {
+		display: none
+	}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1223px) {
 	#slidetext {
 		margin-top: 100px;
 		position: relative;
@@ -448,41 +462,42 @@
 	.fa.fa-angle-left {
 		display: none;
 	}
+}
 
-	@media screen and (min-width: 1225px) {
-		.fille {
-			width: 100%;
-		}
-		.garcon {
-			width: 100%;
-		}
-		#slideshow {
-			height: 785px;
-		}
-		div#slidetext {
-			width: 100%;
-			position: relative;
-			height: 517px;
-		}
-		#slide img {
-			padding-top: 92px;
-		}
-		h2 {
-			padding-top: 85px;
-			padding-bottom: 15px;
-		}
-		#portfolio h2 {
-			padding-top: 0;
-			padding-bottom: 15px;
-		}
-
-		.ff-container input.ff-selector-type-all:checked~label.ff-label-type-all:after,
-		.ff-container input.ff-selector-type-1:checked~label.ff-label-type-1:after,
-		.ff-container input.ff-selector-type-2:checked~label.ff-label-type-2:after,
-		.ff-container input.ff-selector-type-3:checked~label.ff-label-type-3:after {
-			margin-left: 3%;
-		}
-		.fa-eye {
-			margin-top: -21%;
-		}
+@media screen and (min-width: 1225px) {
+	.fille {
+		width: 100%;
 	}
+	.garcon {
+		width: 100%;
+	}
+	#slideshow {
+		height: 785px;
+	}
+	div#slidetext {
+		width: 100%;
+		position: relative;
+		height: 517px;
+	}
+	#slide img {
+		padding-top: 92px;
+	}
+	h2 {
+		padding-top: 85px;
+		padding-bottom: 15px;
+	}
+	#portfolio h2 {
+		padding-top: 0;
+		padding-bottom: 15px;
+	}
+
+	.ff-container input.ff-selector-type-all:checked~label.ff-label-type-all:after,
+	.ff-container input.ff-selector-type-1:checked~label.ff-label-type-1:after,
+	.ff-container input.ff-selector-type-2:checked~label.ff-label-type-2:after,
+	.ff-container input.ff-selector-type-3:checked~label.ff-label-type-3:after {
+		margin-left: 3%;
+	}
+	.fa-eye {
+		margin-top: -21%;
+	}
+}
