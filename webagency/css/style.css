@@ -254,6 +254,69 @@ li .garcon {
 	left: 4.5%;
 }
 
+#timeline {
+	position: absolute;
+	background-color: #5cadd3;
+	height: 6px;
+	width: 0;
+	animation: timeliner 10s infinite;
+	animation-timing-function: ease-in-out;
+	margin-top: 5px;
+	z-index: 1;
+	bottom: 260px;
+}
+
+.radio-none {
+	display: none;
+}
+
+
+
+.fa.fa-angle-left {
+	cursor: pointer;
+	position: ABSOLUTE;
+	top: 30%;
+	background-color: black;
+	color: white;
+	padding: 16px;
+	opacity: 0.6;
+	border-top-right-radius: 140px;
+	border-bottom-right-radius: 140px;
+}
+
+
+
+.fa.fa-angle-right {
+	cursor: pointer;
+	position: ABSOLUTE;
+	top: 30%;
+	left: 97.5%;
+	background-color: black;
+	color: white;
+	padding: 16px;
+	opacity: 0.6;
+	border-bottom-left-radius: 140px;
+	border-top-left-radius: 140px;
+}
+
+}
+
+@keyframes timeliner {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		width: 50px;
+	}
+	20%,
+	45%,
+	70%,
+	90% {
+		width: 300px;
+	}
+}
+
 @keyframes AutoSlide {
 	0% {
 		left: 0%;
@@ -277,7 +340,7 @@ li .garcon {
 
 #slideshow {
 	position: relative;
-	height: 600px;
+	height: 786px;
 	overflow: hidden;
 }
 
@@ -309,18 +372,7 @@ h2 {
 	padding: 15px;
 }
 
-#timeline {
-	position: absolute;
-	background: #999;
-	bottom: 15px;
-	left: 15px;
-	height: 1px;
-	background: rgb(214, 98, 13);
-	background: rgba(214, 98, 13, .8);
-	width: 0;
-	/* fonction d'animation */
-	animation: timeliner 32s infinite;
-}
+
 
 /****** PARAGRAPHE DES DIFFERENTES SECTIONS *******/
 
@@ -448,7 +500,7 @@ h3 {
 /*********PORTFOLIO***********/
 
 #portfolio {
-	padding-top: 150px;
+	padding-top: 91px;
 	background-color: #efefef;
 }
 
@@ -617,6 +669,11 @@ label.ff-label-type-all {
 #contact {
 	width: 100%;
 	height: 500px;
+}
+
+#form {
+	padding-top: 91px;
+	background-color: #efefef;
 }
 
 iframe {
