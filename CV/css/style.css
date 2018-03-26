@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/fond.jpg");
+}
+
+.carousel-item {
+    height: 530px;
+}
+
+.portrait {
+    width: 20%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
