@@ -1,16 +1,13 @@
-/*
- * Customizer stylesheet.
- */
 .pirate-forms-placeholder .header-primary {
 	z-index: 100;
-	border: 2px dashed #8a8a8a;
+	border: #8a8a8a dashed 2px;
 	background: rgba(60, 60, 60, 0.9);
 }
 
 .pirate-forms-placeholder .card {
 	position: relative;
 	z-index: 50;
-	border: 2px dashed #8a8a8a;
+	border: #8a8a8a dashed 2px;
 	background: rgba(255, 255, 255, 0.1);
 }
 
@@ -57,12 +54,12 @@
 .pirate-forms-placeholder .pirate_forms_wrap form,
 .pirate-forms-placeholder .pirate_forms_wrap div {
 	z-index: -2;
-	opacity: 0.3;
+	opacity: 0.300000011920928955078125;
 }
 
 .pirate-forms-placeholder .pirate_forms_wrap form button,
 .pirate-forms-placeholder .pirate_forms_wrap div button {
-	border: 2px dashed #8a8a8a;
+	border: #8a8a8a dashed 2px;
 	background-color: #333;
 	box-shadow: none;
 }
@@ -142,9 +139,8 @@ section.contactus:before {
 	right: 20px;
 	bottom: 20px;
 	left: 20px;
-	border: 2px dashed rgba(121, 121, 121, 0.22);
+	border: rgba(121, 121, 121, 0.22) dashed 2px;
 	content: " ";
-	-webkit-transition: 0.3s ease;
 	transition: 0.3s ease;
 	pointer-events: none;
 }
@@ -177,7 +173,6 @@ section.subscribe-line:not(#subscribe-on-blog) .customize-partial-edit-shortcut,
 body.page .hestia-blogs .customize-partial-edit-shortcut,
 section.contactus .customize-partial-edit-shortcut {
 	opacity: 0;
-	-webkit-transition: 0.3s ease;
 	transition: 0.3s ease;
 }
 
