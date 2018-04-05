@@ -5238,14 +5238,6 @@ body {
     font-size: 12px;
 }
 
-@font-face {
-    {}
-}
-
-@font-face {
-    {}
-}
-
 @keyframes fa-spin {
     0% {
         transform: rotate(0);
@@ -16772,55 +16764,12 @@ p.meta-in-content,
     }
 }
 
-@font-face {
-    {}
-}
-
-@font-face {
-    {}
-}
-
-@font-face {
-    {}
-}
-
-@font-face {
-    {}
-}
-
-@font-face {
-    {}
-}
-
-@font-face {
-    {}
-}
-
-@font-face {
-    {}
-}
-
-@font-face {
-    {}
-}
-
-@font-face {
-    {}
-}
-
-@font-face {
-    {}
-}
 
 @media (min-width:992px) {
     .col-md-8 {
         width: 80%;
         margin-left: 10%;
     }
-}
-
-@font-face {
-    {}
 }
 
 @keyframes a {
@@ -22734,9 +22683,6 @@ button.swiper-pagination-bullet {
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 
-@font-face {
-    {}
-}
 
 @media only screen,
 only screen,
@@ -26287,13 +26233,6 @@ body.custom-background {
     position: relative;
     font-weight: 600;
     cursor: pointer;
-}
-
-.nav,
-.main-navigation,
-.genesis-nav-menu,
-.hide {
-    display: none !important;
 }
 
 .mob-menu-left-bg-holder,
