@@ -268,12 +268,12 @@ textarea {
   line-height: 1.42857;
 }
 
-.form-control::-moz-placeholder,
-.form-group .form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
-.form-group .form-control:-ms-input-placeholder,
-.form-control::-webkit-input-placeholder,
-.form-group .form-control::-webkit-input-placeholder,
+.form-control,
+.form-group .form-control,
+.form-control,
+.form-group .form-control,
+.form-control,
+.form-group .form-control,
 .checkbox label,
 .form-group .checkbox label,
 .radio label,
@@ -285,12 +285,12 @@ label,
   line-height: 1.42857;
 }
 
-.form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
-.form-control::-webkit-input-placeholder,
-.form-group .form-control::-moz-placeholder,
-.form-group .form-control:-ms-input-placeholder,
-.form-group .form-control::-webkit-input-placeholder {
+.form-control,
+.form-control,
+.form-control,
+.form-group .form-control,
+.form-group .form-control,
+.form-group .form-control {
   font-weight: 400;
 }
 
@@ -1427,16 +1427,10 @@ body.menu-open {
   }
 }
 
-:focus,
-:active,
-::-moz-focus-inner {
-  outline: 0 !important;
-}
-
 button,
-input[type="submit"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-.btn::-moz-focus-inner {
+input[type="submit"],
+input[type="button"],
+.btn {
   border: 0;
 }
 
@@ -2277,12 +2271,12 @@ select {
   padding-bottom: 8px;
 }
 
-.form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
-.form-control::-webkit-input-placeholder,
-.form-group .form-control::-moz-placeholder,
-.form-group .form-control:-ms-input-placeholder,
-.form-group .form-control::-webkit-input-placeholder {
+.form-control,
+.form-control,
+.form-control,
+.form-group .form-control,
+.form-group .form-control,
+.form-group .form-control {
   color: #aaa;
 }
 
@@ -2307,12 +2301,12 @@ fieldset[disabled] .form-group .form-control {
   margin-bottom: 7px;
 }
 
-.form-control::-moz-placeholder,
-.form-group .form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
-.form-group .form-control:-ms-input-placeholder,
-.form-control::-webkit-input-placeholder,
-.form-group .form-control::-webkit-input-placeholder,
+.form-control,
+.form-group .form-control,
+.form-control,
+.form-group .form-control,
+.form-control,
+.form-group .form-control,
 .checkbox label,
 .form-group .checkbox label,
 .radio label,
@@ -3020,16 +3014,16 @@ body.admin-bar .navbar {
   .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field {
     color: #ffffff;
   }
-  .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field::-webkit-input-placeholder {
+  .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field {
     color: #ffffff;
   }
-  .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field::-moz-placeholder {
+  .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field {
     color: #ffffff;
   }
-  .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field:-ms-input-placeholder {
+  .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field {
     color: #ffffff;
   }
-  .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field:-moz-placeholder {
+  .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field {
     color: #ffffff;
   }
   .navbar:not(.full-screen-menu) .search-field-wrapper {

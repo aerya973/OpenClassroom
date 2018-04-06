@@ -1,4 +1,3 @@
-@charset "UTF-8";
 img.wp-smiley,
 img.emoji {
     display: inline !important;
@@ -166,12 +165,6 @@ html input[disabled] {
     cursor: default;
 }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
 input {
     line-height: normal;
 }
@@ -182,14 +175,6 @@ input[type="radio"] {
     padding: 0;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-}
-
-input[type="search"] {
-    box-sizing: content-box;
-}
 
 fieldset {
     border: #c0c0c0 solid 1px;
@@ -1989,20 +1974,12 @@ output {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
-.form-control::-moz-placeholder {
+.form-control {
     color: #999;
     opacity: 1;
 }
 
-.form-control:-ms-input-placeholder {
-    color: #999;
-}
-
-.form-control::-webkit-input-placeholder {
-    color: #999;
-}
-
-.form-control::-ms-expand {
+.form-control {
     border: 0;
     background-color: transparent;
 }
@@ -2344,7 +2321,7 @@ select[multiple].input-lg {
 }
 
 .has-error .form-control {
-    border-color: #a94442;
+    border-color: #a94443;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
 }
 
@@ -2360,7 +2337,7 @@ select[multiple].input-lg {
 }
 
 .has-error .form-control-feedback {
-    color: #a94442;
+    color: #a94444;
 }
 
 .has-feedback label~.form-control-feedback {
@@ -2930,7 +2907,6 @@ fieldset[disabled] .btn-danger.focus {
 .btn-link[disabled],
 fieldset[disabled] .btn-link {
     background-color: transparent;
-    box-shadow: none;
 }
 
 .btn-link,
@@ -2942,7 +2918,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:hover,
 .btn-link:focus {
-    color: #23527c;
+    color: #23528c;
     text-decoration: underline;
     background-color: transparent;
 }
@@ -8175,7 +8151,6 @@ body {
 
 .visuallyhidden {
     overflow: hidden;
-    clip: rect(0 0 0 0);
     position: absolute;
     width: 1px;
     height: 1px;
@@ -8899,12 +8874,11 @@ textarea {
     line-height: 1.42857;
 }
 
-.form-control::-moz-placeholder,
-.form-group .form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
-.form-group .form-control:-ms-input-placeholder,
-.form-control::-webkit-input-placeholder,
-.form-group .form-control::-webkit-input-placeholder,
+.form-control .form-group .form-control,
+.form-control,
+.form-group .form-control,
+.form-control,
+.form-group .form-control,
 .checkbox label,
 .form-group .checkbox label,
 .radio label,
@@ -8916,12 +8890,12 @@ label,
     line-height: 1.42857;
 }
 
-.form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
-.form-control::-webkit-input-placeholder,
-.form-group .form-control::-moz-placeholder,
-.form-group .form-control:-ms-input-placeholder,
-.form-group .form-control::-webkit-input-placeholder {
+.form-control,
+.form-control,
+.form-control,
+.form-group .form-control,
+.form-group .form-control,
+.form-group .form-control {
     font-weight: 400;
 }
 
@@ -10058,16 +10032,9 @@ body.menu-open {
     }
 }
 
-:focus,
-:active,
-::-moz-focus-inner {
-    outline: 0 !important;
-}
 
 button,
-input[type="submit"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-.btn::-moz-focus-inner {
+.btn {
     border: 0;
 }
 
@@ -10908,12 +10875,12 @@ select {
     padding-bottom: 8px;
 }
 
-.form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
-.form-control::-webkit-input-placeholder,
-.form-group .form-control::-moz-placeholder,
-.form-group .form-control:-ms-input-placeholder,
-.form-group .form-control::-webkit-input-placeholder {
+.form-control,
+.form-control,
+.form-control,
+.form-group .form-control,
+.form-group .form-control,
+.form-group .form-control {
     color: #aaa;
 }
 
@@ -10938,12 +10905,12 @@ fieldset[disabled] .form-group .form-control {
     margin-bottom: 7px;
 }
 
-.form-control::-moz-placeholder,
-.form-group .form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
-.form-group .form-control:-ms-input-placeholder,
-.form-control::-webkit-input-placeholder,
-.form-group .form-control::-webkit-input-placeholder,
+.form-control,
+.form-group .form-control,
+.form-control,
+.form-group .form-control,
+.form-control,
+.form-group .form-control,
 .checkbox label,
 .form-group .checkbox label,
 .radio label,
@@ -11651,16 +11618,16 @@ body.admin-bar .navbar {
     .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field {
         color: #ffffff;
     }
-    .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field::-webkit-input-placeholder {
+    .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field {
         color: #ffffff;
     }
-    .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field::-moz-placeholder {
+    .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field {
         color: #ffffff;
     }
-    .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field:-ms-input-placeholder {
+    .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field {
         color: #ffffff;
     }
-    .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field:-moz-placeholder {
+    .navbar-transparent:not(.full-screen-menu) .hestia-search-in-nav .search-field {
         color: #ffffff;
     }
     .navbar:not(.full-screen-menu) .search-field-wrapper {
@@ -16764,7 +16731,6 @@ p.meta-in-content,
     }
 }
 
-
 @media (min-width:992px) {
     .col-md-8 {
         width: 80%;
@@ -19752,31 +19718,31 @@ ul.elementor-icon-list-items.elementor-grid .elementor-grid-item {
     outline: 0;
 }
 
-.elementor-field-group .elementor-field-textual::-webkit-input-placeholder {
+.elementor-field-group .elementor-field-textual {
     color: inherit;
     font-family: inherit;
     opacity: 0.60000002384185791015625;
 }
 
-.elementor-field-group .elementor-field-textual:-ms-input-placeholder {
+.elementor-field-group .elementor-field-textual {
     color: inherit;
     font-family: inherit;
     opacity: 0.60000002384185791015625;
 }
 
-.elementor-field-group .elementor-field-textual::-moz-placeholder {
+.elementor-field-group .elementor-field-textual {
     color: inherit;
     font-family: inherit;
     opacity: 0.60000002384185791015625;
 }
 
-.elementor-field-group .elementor-field-textual::-ms-input-placeholder {
+.elementor-field-group .elementor-field-textual {
     color: inherit;
     font-family: inherit;
     opacity: 0.60000002384185791015625;
 }
 
-.elementor-field-group .elementor-field-textual::placeholder {
+.elementor-field-group .elementor-field-textual {
     color: inherit;
     font-family: inherit;
     opacity: 0.60000002384185791015625;
@@ -22683,7 +22649,6 @@ button.swiper-pagination-bullet {
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 
-
 @media only screen,
 only screen,
 only screen,
@@ -22704,17 +22669,17 @@ only screen {
     text-align: left !important;
 }
 
-.jp-carousel-info ::-moz-selection {
+.jp-carousel-info {
     background: #68c9e8;
     color: #fff;
 }
 
-.jp-carousel-info ::selection {
+.jp-carousel-info {
     background: #68c9e8;
     color: #fff;
 }
 
-.jp-carousel-info ::-moz-selection {
+.jp-carousel-info {
     background: #68c9e8;
     color: #fff;
 }
@@ -23302,16 +23267,16 @@ textarea#jp-carousel-comment-form-comment-field {
     box-sizing: border-box;
 }
 
-textarea#jp-carousel-comment-form-comment-field::-webkit-input-placeholder {
+textarea#jp-carousel-comment-form-comment-field {
     color: #555;
 }
 
-textarea#jp-carousel-comment-form-comment-field:focus {
+textarea#jp-carousel-comment-form-comment-field {
     background: #ccc;
     color: #222;
 }
 
-textarea#jp-carousel-comment-form-comment-field:focus::-webkit-input-placeholder {
+textarea#jp-carousel-comment-form-comment-field {
     color: #aaa;
 }
 
@@ -23551,15 +23516,15 @@ textarea#jp-carousel-comment-form-comment-field:focus::-webkit-input-placeholder
     border-color: #ccc;
 }
 
-.jp-carousel-light #jp-carousel-comment-form-comment-field::-webkit-input-placeholder {
+.jp-carousel-light #jp-carousel-comment-form-comment-field {
     color: #aaa;
 }
 
-.jp-carousel-light #jp-carousel-comment-form-comment-field:focus {
+.jp-carousel-light #jp-carousel-comment-form-comment-field {
     color: #333;
 }
 
-.jp-carousel-light #jp-carousel-comment-form-comment-field:focus::-webkit-input-placeholder {
+.jp-carousel-light #jp-carousel-comment-form-comment-field {
     color: #ddd;
 }
 
@@ -23631,7 +23596,7 @@ textarea#jp-carousel-comment-form-comment-field:focus::-webkit-input-placeholder
         opacity: 1;
     }
     .jp-carousel-wrap {
-        background-color: #000;
+        background-color: #000000;
     }
     .jp-carousel-fadeaway {
         display: none;
@@ -23879,7 +23844,6 @@ textarea#jp-carousel-comment-form-comment-field:focus::-webkit-input-placeholder
     }
 }
 
-@font-face {}
 
 @media only screen and (max-width:640px) {
     #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
@@ -24620,7 +24584,7 @@ div.sharedaddy.sharedaddy-dark #sharing_email {
 }
 
 .slideshow-window {
-    background-color: #222;
+    background-color: #222222;
     border: #222 solid 20px;
     border-radius: 10px;
     height: 0;
