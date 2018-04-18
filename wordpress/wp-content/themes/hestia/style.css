@@ -7906,3 +7906,309 @@ footer .wpml-ls-item-legacy-dropdown-click a {
     padding: 15px 0;
   }
 }
+
+/********************CSS PERSONMALISE*******************/
+
+button.aicon_link {
+  width: 40px;
+  height: 40px
+}
+
+/*Reglage case de recherche sur le menu*/
+
+form.search-form.form-group {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.searchform input[type=submit],
+.searchform button,
+.search-form input[type=submit],
+.search-form button,
+.woocommerce-product-search input[type=submit],
+.woocommerce-product-search button {
+  top: -16px;
+  width: 35px;
+  height: 35px
+}
+
+.searchform:after,
+.search-form:after,
+.woocommerce-product-search:after {
+  right: 12px;
+  top: 0;
+}
+
+.searchform:after,
+.search-form:after,
+.woocommerce-product-search:after {
+  font-size: 15px;
+}
+
+/*Reglage bouton access*/
+
+#open_sogoacc.topright {
+  right: 10px;
+  top: 17px;
+}
+
+#open_sogoacc {
+  padding: 3.5px;
+}
+
+button.aicon_link {
+  width: 35px;
+  height: 35px;
+}
+
+.form-group.label-floating label.control-label,
+.form-group.label-placeholder label.control-label {
+  top: -11px;
+  left: -5px;
+}
+
+label.label-floating.is-empty.form-group {
+  width: 110px;
+}
+
+li.astm-search-menu.astm-search-menu.default {
+  float: right !important;
+  top: 10px;
+}
+
+#open_sogoacc.topright {
+  right: 9px;
+  top: 2px;
+}
+
+/*Taille Articles recents*/
+
+form.search-form.form-group {
+  top: 40px;
+}
+
+/*Taille Articles recents*/
+
+h5 {
+  text-align: center;
+}
+
+/*Calendrier */
+
+caption {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*Reglage tableau responsive*/
+
+table#tablepress-Activite {
+  width: 100%;
+}
+
+/*Retrait Copyright theme*/
+
+.pull-right {
+  display: none;
+}
+
+/*footer*/
+
+.infos p {
+  text-align: left;
+}
+
+.infos h5 {
+  text-align: left;
+}
+
+.col-md-4 {
+  width: 30%;
+}
+
+ul#menu-login {
+  width: 100%;
+  text-align: center;
+}
+
+li#menu-item-293 {
+  width: 100%;
+}
+
+li#menu-item-447 {
+  width: 100%;
+}
+
+.footer-black hr {
+  display: none;
+}
+
+.footer-big .footer-menu li a {
+  padding: 0;
+}
+
+.elementor img {
+  max-width: 80%;
+}
+
+
+/*Taille des images paged'accueil*/
+
+@media screen and (max-width: 780px) {
+  img.attachment-large.size-large {
+    width: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .copyright {
+    display: none;
+  }
+}
+
+@media screen and (max-width:780px) {
+  /*Reglage tableau*/
+  td.column-3 {
+    display: none;
+  }
+
+  th.column-3.sorting {
+    display: none;
+  }
+
+  td img {
+    display: none;
+  }
+
+  td h4 {
+
+    padding: 10px;
+  }
+
+  td.column-1 {
+    width: 40%;
+  }
+
+  td.column-2 {
+    font-size: 0.8em;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  table#tablepress-Activite {
+    width: 95%;
+  }
+}
+
+/*Menu Burger fond rose */
+
+@media screen and (max-width:992px) {
+  .navbar button.navbar-toggle,
+  .navbar button.navbar-toggle:hover {
+    color: #555;
+    display: none;
+  }
+
+  .mobmenur-container {
+    position: absolute;
+    right: 1%;
+    width: 3em;
+    margin-top: 9px;
+    background-color: #c44265;
+    border-radius: 20px;
+    padding: 10px;
+    top: 14px;
+    margin-right: 14px;
+  }
+
+
+
+  .aicon_link {
+    left: -110px
+  }
+
+  #open_sogoacc.topright {
+    right: 65px;
+    top: 5px;
+  }
+}
+
+/*footer*/
+
+.footer-big .content {
+  text-align: center;
+}
+
+.col-md-4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#custom_html-3 {
+  width: 30%;
+}
+
+div#custom_html-6 {
+  width: 30%;
+}
+
+div#calendar-2 {
+  width: 30%;
+}
+
+@media screen and (max-width: 750px) {
+  .col-md-4 {
+    flex-direction: column;
+  }
+
+  .footer .widget h5 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .infos p {
+    text-align: center;
+  }
+
+
+  div#custom_html-3 {
+    width: 100%;
+  }
+
+  .footer-big .content {
+    text-align: center;
+  }
+
+  div#custom_html-6 {
+    width: 100%;
+  }
+
+  div#calendar-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  table>thead>tr>th {
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  .tablepress td,
+  .tablepress th {
+    padding: 4px;
+    border: none;
+    background: 0 0;
+    text-align: left;
+    float: none;
+  }
+
+  td.column-2 {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+}
