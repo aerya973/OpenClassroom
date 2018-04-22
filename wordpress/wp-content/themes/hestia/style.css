@@ -8007,6 +8007,10 @@ table#tablepress-Activite {
   width: 100%;
 }
 
+.tablepress tbody td {
+  vertical-align: middle;
+}
+
 /*Retrait Copyright theme*/
 
 .pull-right {
@@ -8211,4 +8215,51 @@ div#calendar-2 {
     text-align: center;
   }
 
+}
+
+
+/*RESEAUX SOCIAUX*/
+
+.footer-big .footer-menu li a[href*="facebook.com"] {
+  font-size: 30px;
+}
+
+
+@media screen and (max-width:430px) {
+  button,
+  input[type="submit"],
+  input[type="button"],
+  .btn {
+    padding: 2px 9px;
+  }
+
+}
+
+@media screen and (max-width: 379px) {
+  button,
+  input[type="submit"],
+  input[type="button"],
+  .btn {
+    padding: 1px 4px;
+    font-size: 0.9em;
+  }
+
+  h4,
+  .single-post-wrap article h4,
+  .page-content-wrap h4,
+  .page-template-template-fullwidth article h4 {
+    font-size: 0.8em;
+  }
+
+  button {
+    font-size: 0.7em;
+  }
+
+  h2.tablepress-table-name.tablepress-table-name-id-Activite {
+    font-size: 2em;
+  }
+
+  table#tablepress-Activite {
+    width: 100%;
+  }
 }
