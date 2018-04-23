@@ -28,5 +28,4 @@ wordpress/wp-content/mu-plugins/*
 
 # Ignore le contenu de "themes" sauf le dossier de NOTRE thème
 /wordpress/wp-content/themes/*
-!/wordpress/wp-content/themes/oc-theme/
-!/wordpress/wp-content/themes/hestia/
+!/wordpress/wp-content/themes/hestia-child/
