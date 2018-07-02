@@ -258,10 +258,11 @@ li .garcon {
 	position: absolute;
 	background-color: #5cadd3;
 	height: 6px;
-	width: 100px;
+	width: 100%;
+	animation-timing-function: ease-in-out;
 	margin-top: 5px;
 	z-index: 1;
-	bottom: 32.9%;
+	bottom: 32.8%;
 }
 
 .radio-none {

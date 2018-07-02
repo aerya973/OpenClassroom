@@ -1,6 +1,28 @@
 /*= CORE ============================================*/
+let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'l', 'm', 'n', 'o','p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 let listeMots = ["armoire","boucle","buisson","bureau","chaise","carton","couteau","fichier","garage","glace","journal","kiwi","lampe","liste","montagne","remise","sandale","taxi","vampire","volant"];
+
+class Dom {
+    constructor(touche, letters){
+        this.touche = touche;
+        this.letters = letters;
+    }
+    caseAlphaB() {
+        this.touche = document.getElementById('case');
+        this.letters = document.createElement('ul');
+       
+    
+        for (var i = 0; i < alphabet.length; i++) {
+          this.letters.id = 'alphabet';
+          let liste = document.createElement('li');
+          liste.id = 'letter';
+          liste.innerHTML = alphabet[i];
+          this.touche.appendChild(this.letters);
+          this.letters.appendChild(liste);
+        }
+    }
+}
 
 class Joueur {
     constructor(name, vies) {
@@ -72,7 +94,7 @@ class Partie {
         let life = document.createElement("div");
         life.id = "restLife";
         life.textContent = "Il vous reste " + joueur.vies + " vies";
-        document.getElementById("bloc1").appendChild(life);
+        document.getElementById("compteurVies").appendChild(life);
     }
 }
 
@@ -80,11 +102,13 @@ class Partie {
 
 let joueur = new Joueur(prompt("Entrez votre nom: "));
 let partie = new Partie;
+let dom = new Dom;
 
 console.log(partie.motRecompose);
 console.log(partie.motATrouver);
-
+dom.caseAlphaB();
 joueur.bonjour();
+
 while ((partie.motRecompose != partie.motATrouver)&&(joueur.vies > 0)){
     partie.demandeLettre();
 }
