@@ -2,13 +2,13 @@ class Map {
   constructor(){
     this.map = null;
     this.google = window.google;
-    this.data = this.getMarker();
+    this.data = this.getData();
   }
   
   initMap(){
     this.map = new this.google.maps.Map(document.getElementById('map'), {
       center: {lat: 45.750000, lng: 4.850000},
-      zoom: 8
+      zoom:12
     });
   }
     
@@ -21,16 +21,26 @@ class Map {
         this.data[value].position.lng
       );
       
-      var marker = new this.google.maps.Marker({
+      let marker = new this.google.maps.Marker({
         position: markerLatlng,
-        title: this.data[value].name
+        title: this.data[value].name,
+        address: this.data[value].address,
+        available: this.data[value].available_bike_stands,
+        clickable:true
+      });
+
+      marker.addListener('click', function(){
+        // alert(marker.title + marker.address + marker.available);
+        document.getElementById('nameStation').innerHTML = marker.title;
+        document.getElementById('stationAdress').innerHTML = marker.address;
+        document.getElementById('bikeStands').innerHTML = marker.available;
       });
       
       marker.setMap(this.map);
     }
   }
  
-  getMarker(){
+  getData(){
     let url = 'https://api.jcdecaux.com/vls/v1/stations?contract=lyon&apiKey=fdd1c26d4128f6e256aeca7dc6f3876ca42c1fe0';
     const req = new XMLHttpRequest();
     
@@ -44,11 +54,5 @@ class Map {
     }
     return data;
   }
-  
-  // getInfo(){
-  //   console.log(this.data);
-  //   this.google.maps.event.addListener(this.addMarker() ,'click',function() {
-  //     this.map.setZoom(9);
-  //   });
-  // }
 }
+

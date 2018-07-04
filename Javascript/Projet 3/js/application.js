@@ -5,7 +5,6 @@ class Application {
         this.map = new Map();
         this.map.initMap();
         this.map.addMarker();
-        // this.map.getInfo();
     }
 }
 

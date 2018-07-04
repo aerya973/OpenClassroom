@@ -30,7 +30,7 @@ li {
 }
 
 .slide {
-    width: 50%;
+    width: 90%;
     height:100%;
     border: 1px solid black;
 }
@@ -46,6 +46,14 @@ header img {
     width: 50%;
     position: absolute;
     overflow: hidden;
+}
+
+#infos {
+    border: 1px solid black;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    margin-left: 50%;
 }
 
 html, body {
