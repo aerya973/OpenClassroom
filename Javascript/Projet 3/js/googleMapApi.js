@@ -3,6 +3,8 @@ class Map {
     this.map = null;
     this.google = window.google;
     this.data = this.getData();
+    this.marker = null;
+    // this.dataURL = 'https://api.jcdecaux.com/vls/v1/stations?contract=lyon&apiKey=fdd1c26d4128f6e256aeca7dc6f3876ca42c1fe0';
   }
   
   initMap(){
@@ -21,7 +23,7 @@ class Map {
         this.data[value].position.lng
       );
       
-      let marker = new this.google.maps.Marker({
+      this.marker = new this.google.maps.Marker({
         position: markerLatlng,
         title: this.data[value].name,
         address: this.data[value].address,
@@ -29,14 +31,13 @@ class Map {
         clickable:true
       });
 
-      marker.addListener('click', function(){
-        // alert(marker.title + marker.address + marker.available);
-        document.getElementById('nameStation').innerHTML = marker.title;
-        document.getElementById('stationAdress').innerHTML = marker.address;
-        document.getElementById('bikeStands').innerHTML = marker.available;
-      });
+      this.marker.setMap(this.map);
       
-      marker.setMap(this.map);
+      this.marker.addListener('click', function(){
+        let reservation = new Reservation(this.marker);
+        reservation.infoStation();
+      
+      });
     }
   }
  
@@ -55,4 +56,3 @@ class Map {
     return data;
   }
 }
-
