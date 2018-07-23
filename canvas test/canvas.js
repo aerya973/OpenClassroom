@@ -7,12 +7,13 @@
 
         this.ctx.lineJoin = 'round';
         this.ctx.lineCap = 'round';
-        this.ctx.lineWidth = 20;
+        this.ctx.lineWidth = 10;
         this.ctx.strokeStyle = '#ac0000';
         
         this.isDrawing = false;
         this.lastX = 0;
         this.lastY = 0;
+   
 
      }
    
@@ -38,9 +39,4 @@
         this.canvas.addEventListener('mouseup', () => this.isDrawing = false);
         this.canvas.addEventListener('mouseout', () => this.isDrawing = false);
     }
-
- }
- 
-let signature = new Signature();
-this.draw();
-this.mouseEvent();
+}

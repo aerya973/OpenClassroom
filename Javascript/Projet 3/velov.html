@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Projet 3</title>
         <link rel="stylesheet" href="./css/velov.css" type="text/css" />
+         <link rel="stylesheet" href="./css/mobile.css" type="text/css" />
 
     </head>
     <body>
@@ -12,9 +13,9 @@
                 <img src="./Logo_Velov.gif"></img>
             </div>
         </header>
-        
+      
         <!--Section qui affiche la demarche a suivre pour reserver un velo-->
-        <section id= part1>
+        <section id= part1 class="parallax">
             <div id="diapo">
                 <img src="./test/Sans titre-1.png" class="slide"></img></li>
                 <img src="./test/Sans titre-2.png" class="slide"></img></li>
@@ -28,7 +29,7 @@
         </section>
         
         <!--Section coupee en deux : d'un cote la carte Google, de l'autre la parti info et reservations-->
-        <section>
+        <section id="part2">
             <div id="reserver">
                 <div id="map"></div>
                 <div id="infos">
@@ -36,13 +37,14 @@
                     <div id="nameStation"></div>
                     <div id=stationAdress></div>
                     <div id="bikeStands"></div>
-                    <button>Reserver</button>
+                    <div id="signature"></div>
+                    <button id="boutton">Reserver</button>
                 </div>
             </div>
         </section>
         
         <!--Le footer comprend un decompte de 20 min, au dela la reservation sera effacee-->
-        <footer>
+        <footer class="parallax">
             <div id="decompte">
                 <p>Place du decompte</p>
             </div>
@@ -52,6 +54,7 @@
         <script type="text/javascript" src="./js/diapo.js"></script>
         <script type="text/javascript" src="./js/googleMapApi.js"></script>
         <script type="text/javascript" src="./js/resa.js"></script>
+        <script type="text/javascript" src="./js/canvas.js"></script>
         <script type="text/javascript" src="./js/application.js"></script>
      
         <!--AIzaSyAlAW1zkDKr3p_9qErB8XfL2hGUJzPgc90-->

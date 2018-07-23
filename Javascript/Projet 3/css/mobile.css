@@ -1,0 +1,23 @@
+@media screen and (min-width: 200px) and (max-width: 500px){
+      .slide {
+        height: 50%;
+        width: 100%;
+        padding-left: 0%;
+    }  
+    
+#diapo {
+        width: 100%;
+        padding-left:0;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    .slide {
+        height: 70%;
+        width: 90%;
+        padding-left: 2%;
+    }
+    #reserver {
+        height: 60%;
+    }
+}

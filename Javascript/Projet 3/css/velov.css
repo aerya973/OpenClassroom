@@ -1,7 +1,21 @@
+section {
+    width: 100%;
+    height: 100%;
+}
+.parallax {
+    background-image: url('../lyon.jpg');
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #banniere {
     width: 100%;
     height: 54px;
-    background-color: red;
+    background-color: #f44336;
     position: relative;
 }
 
@@ -11,8 +25,10 @@
 }
 
 #diapo {
-    width: 100%;
-    height: 500px;
+    width: 80%;
+    height: 90%;
+    padding-left: 10%;
+    position: absolute;
 }
 
 #slider {
@@ -30,9 +46,9 @@ li {
 }
 
 .slide {
-    width: 90%;
-    height:100%;
-    border: 1px solid black;
+    padding-top: 68px;
+    width: 100%;
+    height: 100%;
 }
 
 header img {
@@ -41,19 +57,60 @@ header img {
     position: absolute;
 }
 
-#map {
+#reserver {
     height: 100%;
-    width: 50%;
+    width: 100%;
+    position: absolute;
+    margin-top: 0%;
+}
+
+#map {
+    height: 90%;
+    width: 100%;
     position: absolute;
     overflow: hidden;
+    border-radius: 23px;
 }
 
 #infos {
-    border: 1px solid black;
-    width: 50%;
-    height: 100%;
+    width: 15%;
+    height: 43%;
     position: absolute;
-    margin-left: 50%;
+    margin-left: 80%;
+    background-color: white;
+    margin-top: 4%;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #d8d8d8;
+    margin-top: 0;
+    padding: 8px;
+    border-radius: 5px;
+    color: black;
+}
+
+#boutton {
+    background-color:#f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#boutton:hover {
+    background-color: #e23e31;
+    color: white;
+}
+
+#signature canvas {
+    background-color: #ddd;
 }
 
 html, body {

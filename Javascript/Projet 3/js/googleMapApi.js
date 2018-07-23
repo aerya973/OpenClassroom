@@ -9,7 +9,7 @@ class Map {
   initMap(){
     this.map = new this.google.maps.Map(document.getElementById('map'), {
       center: {lat: 45.750000, lng: 4.850000},
-      zoom:12
+      zoom:13
     });
   }
     
@@ -29,11 +29,12 @@ class Map {
       marker.setMap(this.map);
       
       marker.addListener('click', function(){
-        let reservation = new Reservation(this);
-        reservation.infoStation(this);
+        application.reservation = new Reservation(this);
+        application.reservation.infoStation(this);
       });
     }
   }
+
  
   getData(){
     let url = 'https://api.jcdecaux.com/vls/v1/stations?contract=lyon&apiKey=fdd1c26d4128f6e256aeca7dc6f3876ca42c1fe0';
