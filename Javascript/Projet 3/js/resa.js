@@ -1,6 +1,7 @@
 class Reservation {
-  constructor(marker){
-    this.station = marker.station;
+  constructor(){
+    this.station = null;
+    this.createButton();
     this.clickBouton();
     this.signature = new Signature();
     this.tempsResa = 0.1;
@@ -9,21 +10,32 @@ class Reservation {
 
 
   infoStation(marker){
- 
-    document.getElementById('nameStation').innerHTML = marker.station.name;
-    document.getElementById('stationAdress').innerHTML = marker.station.address;
-    document.getElementById('bikeStands').innerHTML = marker.station.available_bikes;
+    this.station = marker.station;
+    document.getElementById('nameStation').innerHTML = "<span>Nom de la station</br></span>" + marker.station.name;
+    document.getElementById('stationAdress').innerHTML = "<span>Adresse</br></span>" + marker.station.address;
+    document.getElementById('bikeStands').innerHTML = "<span>Places disponibles</span> " + marker.station.available_bikes;
   }
 
-  clickBouton(){
+    createButton(){
+      let divInfo = document.getElementById("infos");
+      let btn = document.createElement("BUTTON");
+      btn.id = "boutton";
+      let text = document.createTextNode("Reserver");
+      btn.appendChild(text);
+      divInfo.appendChild(btn);
+      // let veloDispo = this.station.available_bikes;
+      // if (veloDispo < 1){
+      //   alert("Pas de Velo'v disponibles");
+      // } Mettre sur le marqueur
+    }
+    
+  clickBouton(marker){
     let bouton = document.getElementById('boutton');
     bouton.addEventListener('click', function(){
       localStorage.setItem('station', application.reservation.station.name);
       let date = new Date();
       localStorage.setItem('date', date.getTime());
       this.timer = application.reservation.countTimer();
-      this.timer;
-    
     }, false); 
   }
   
@@ -37,7 +49,7 @@ class Reservation {
       let minutes = Math.floor(tempsRestant/60);
       let secondes = tempsRestant%60;
       let timeZone = document.getElementById("decompte");
-      timeZone.innerHTML = minutes + ":" + secondes;
+      timeZone.innerHTML = JSON.stringify(application.reservation.station.name)+ "</br>" + minutes + ":" + secondes;
       
       if (tempsEcoule > tempsTotal) {
          timeZone.innerHTML = "Reservation terminée";

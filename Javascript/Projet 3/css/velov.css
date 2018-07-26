@@ -1,20 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 section {
     width: 100%;
     height: 100%;
 }
-.parallax {
+
+p {
+    margin-top: 0;
+}
+
+#flexbox {
+    width: 100%;
+    height: 100%;
+}
+
+.parallax1 {
     background-image: url('../lyon.jpg');
     height: 100%; 
-
-    /* Create the parallax scrolling effect */
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 #banniere {
     width: 100%;
-    height: 54px;
+    height: 65px;
     background-color: #f44336;
     position: relative;
 }
@@ -46,13 +62,38 @@ li {
 }
 
 .slide {
-    padding-top: 68px;
-    width: 100%;
-    height: 100%;
+    margin-top: 60px;
+    width: 75%;
+    height: 75%;
+    margin-left: 9%;
+    border: 4px solid #f44336;
+    border-radius: 5px;
+}
+
+#boutonDroite {
+    background-color: #f1f1f1;
+    color: #393939;
+    position: absolute;
+    margin-left: 80%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#boutonGauche {
+    background-color: #f1f1f1;
+    color: #393939;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 header img {
-    width: 100px;
+    width: 110px;
     padding-left: 21px;
     position: absolute;
 }
@@ -65,20 +106,20 @@ header img {
 }
 
 #map {
-    height: 90%;
+    height: 100%;
     width: 100%;
     position: absolute;
     overflow: hidden;
-    border-radius: 23px;
 }
 
 #infos {
     width: 15%;
-    height: 43%;
+    height: 47%;
     position: absolute;
     margin-left: 80%;
     background-color: white;
     margin-top: 4%;
+    text-align:center;
 }
 
 h4 {
@@ -90,6 +131,16 @@ h4 {
     border-radius: 5px;
     color: black;
 }
+
+span {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#nameStation, #stationAdress, #bikeStands{
+    padding-bottom: 10px;
+}
+
 
 #boutton {
     background-color:#f44336; /* Red */
@@ -113,8 +164,16 @@ h4 {
     background-color: #ddd;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+#decompte {
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+    background-color: white;
+    vertical-align: middle;
+    padding-top: 60px;
+    opacity: 0.9;
+    color: black;
+    width: 50%;
+    margin-left: 23%;
 }
+

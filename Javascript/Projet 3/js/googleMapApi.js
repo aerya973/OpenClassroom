@@ -9,7 +9,7 @@ class Map {
   initMap(){
     this.map = new this.google.maps.Map(document.getElementById('map'), {
       center: {lat: 45.750000, lng: 4.850000},
-      zoom:13
+      zoom:12
     });
   }
     
@@ -29,7 +29,6 @@ class Map {
       marker.setMap(this.map);
       
       marker.addListener('click', function(){
-        application.reservation = new Reservation(this);
         application.reservation.infoStation(this);
       });
     }

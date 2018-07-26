@@ -5,39 +5,42 @@ class Signature {
         this.ctx = this.canvas.getContext('2d');
         this.canvas.width = 200;
         this.canvas.height = 200;
-        this.mouseX = event.pageX - event.offsetLeft;
-        this.mouseY = event.pageY - event.offsetTop;
+        this.ctx.lineJoin = 'round';
+        this.ctx.lineCap = 'round';
+        this.ctx.lineWidth = 3;
         this.createCanvas();
         this.mouseEvent();
+        this.activ = false;
     }
     
     createCanvas(){
         let selectZone = document.getElementById('signature');
         selectZone.appendChild(this.canvas);
+        let maximize = document.getElementById("infos");
+        maximize.style.height = "500px";
     }
 
     
     mouseEvent(){
         this.canvas.addEventListener("mousedown", this.pointerDown, false);
-        this.canvas.addEventListener("mouseup", this.pointerUp, false);
-        this.canvas.addEventListener( 'mousemove', function(event) {
-            // if(event.offsetX){
-            //     this.mouseX = event.offsetX;
-            //     this.mouseY = event.offsetY;
-            // } else {
-            //     this.mouseX = event.pageX - event.target.offsetLeft;
-            //     this.mouseY = event.pageY - event.target.offsetTop;
-            // }
+        
+        this.canvas.addEventListener('mousemove', function() {
             application.reservation.signature.paint();
         }, false );
+        this.canvas.addEventListener("mouseup", this.pointerUp, false);
     }
     
+    
     paint() {
-        application.reservation.signature.ctx.lineTo(application.reservation.signature.mouseX, application.reservation.signature.mouseY);
-        application.reservation.signature.ctx.stroke();
+        if (application.reservation.signature.activ){
+            application.reservation.signature.ctx.lineTo(event.offsetX, event.offsetY);
+            application.reservation.signature.ctx.stroke();
+            [application.reservation.signature.mouseX, application.reservation.signature.mouseY] = [event.offsetX, event.offsetY];
+        }
     }
     
     pointerDown() {
+        application.reservation.signature.activ = true;
         application.reservation.signature.ctx.beginPath();
         application.reservation.signature.ctx.moveTo(application.reservation.signature.mouseX , application.reservation.signature.mouseY);
         application.reservation.signature.mouseX = event.offsetX;
@@ -46,6 +49,7 @@ class Signature {
     }
     
     pointerUp() {
+        application.reservation.signature.activ = false;
         application.reservation.signature.ctx.closePath();
     }
 }

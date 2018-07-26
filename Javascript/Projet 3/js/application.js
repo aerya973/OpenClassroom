@@ -4,8 +4,9 @@ class Application {
         this.diaporama.showDivs(1);
         this.map = new Map();
         this.map.initMap();
+        this.reservation = new Reservation();
         this.map.addMarker();
-        this.reservation = null;
+        
     } 
 }
 
