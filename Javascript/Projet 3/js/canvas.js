@@ -7,7 +7,7 @@ class Signature {
         this.canvas.height = 200;
         this.ctx.lineJoin = 'round';
         this.ctx.lineCap = 'round';
-        this.ctx.lineWidth = 3;
+        this.ctx.lineWidth = 2;
         this.createCanvas();
         this.mouseEvent();
         this.activ = false;
@@ -24,14 +24,14 @@ class Signature {
     mouseEvent(){
         this.canvas.addEventListener("mousedown", this.pointerDown, false);
         
-        this.canvas.addEventListener('mousemove', function() {
-            application.reservation.signature.paint();
+        this.canvas.addEventListener('mousemove', function(event) {
+            application.reservation.signature.paint(event);
         }, false );
         this.canvas.addEventListener("mouseup", this.pointerUp, false);
     }
     
     
-    paint() {
+    paint(event) {
         if (application.reservation.signature.activ){
             application.reservation.signature.ctx.lineTo(event.offsetX, event.offsetY);
             application.reservation.signature.ctx.stroke();
@@ -39,7 +39,7 @@ class Signature {
         }
     }
     
-    pointerDown() {
+    pointerDown(event) {
         application.reservation.signature.activ = true;
         application.reservation.signature.ctx.beginPath();
         application.reservation.signature.ctx.moveTo(application.reservation.signature.mouseX , application.reservation.signature.mouseY);

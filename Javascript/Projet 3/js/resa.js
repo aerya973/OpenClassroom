@@ -4,7 +4,7 @@ class Reservation {
     this.createButton();
     this.clickBouton();
     this.signature = new Signature();
-    this.tempsResa = 0.1;
+    this.tempsResa = 20;
     this.timer = null;
   }
 

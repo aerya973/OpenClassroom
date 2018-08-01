@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title>Projet 3</title>
@@ -10,7 +10,7 @@
     <body>
         <header>
             <div id="banniere">
-                <img src="./Logo_Velov.gif"></img>
+                <img src="./Logo_Velov.gif" alt ="Logo VeloV">
             </div>
         </header>
       
@@ -18,12 +18,11 @@
         <div id="flexbox">
             <section id= part1>
                 <div id="diapo">
-                    <img src="./Map.png" class="slide"></img>
-                    <img src="./map1.png" class="slide"></img>
-                    <img src="./map2.png" class="slide"></img>
-                    <img src="./map3.png" class="slide"></img>
-                    <img src="./test/Sans titre-5.png" class="slide"></img>
-                    <img src="./test/Sans titre-6.png" class="slide"></img>
+                    <img src="./Map.png" class="slide" alt="cliquerMarqueur">
+                    <img src="./map1.png" class="slide" alt="infos">
+                    <img src="./map2.png" class="slide" alt="signer">
+                    <img src="./map3.png" class="slide" alt="valider">
+                    <img src="./map4.png" class="slide" alt="reservationTerminee">
                     <button class="w3-button w3-black w3-display-left" id="boutonGauche">&#10094;</button>
                     <button class="w3-button w3-black w3-display-right" id="boutonDroite">&#10095;</button>
                 </div>
@@ -46,21 +45,15 @@
             <!--Le footer comprend un decompte de 20 min, au dela la reservation sera effacee-->
             <footer>
                 <div id="decompte">
-                    <p>Place du decompte</p>
                 </div>
             </footer>
         </div>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlAW1zkDKr3p_9qErB8XfL2hGUJzPgc90"
         ></script>
-        <script type="text/javascript" src="./js/diapo.js"></script>
-        <script type="text/javascript" src="./js/googleMapApi.js"></script>
-        <script type="text/javascript" src="./js/resa.js"></script>
-        <script type="text/javascript" src="./js/canvas.js"></script>
-        <script type="text/javascript" src="./js/application.js"></script>
-     
-        <!--AIzaSyAlAW1zkDKr3p_9qErB8XfL2hGUJzPgc90-->
-
+        <script src="./js/diapo.js"></script>
+        <script src="./js/googleMapApi.js"></script>
+        <script src="./js/resa.js"></script>
+        <script src="./js/canvas.js"></script>
+        <script src="./js/application.js"></script>
     </body>
-
-    
 </html>
