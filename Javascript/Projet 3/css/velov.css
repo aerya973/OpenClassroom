@@ -1,3 +1,7 @@
+*{
+  box-sizing:border-box;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -41,10 +45,11 @@ p {
 }
 
 #diapo {
-    width: 80%;
+    width: 95%;
     height: 90%;
     padding-left: 10%;
     position: absolute;
+    padding-top: 3%;
 }
 
 #slider {
@@ -175,5 +180,6 @@ span {
     color: black;
     width: 50%;
     margin-left: 23%;
+    line-height: 1.5;
 }
 

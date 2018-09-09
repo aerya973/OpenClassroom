@@ -16,18 +16,14 @@ class Reservation {
     document.getElementById('bikeStands').innerHTML = "<span>Places disponibles</span> " + marker.station.available_bikes;
   }
 
-    createButton(){
+  createButton(){
       let divInfo = document.getElementById("infos");
       let btn = document.createElement("BUTTON");
       btn.id = "boutton";
       let text = document.createTextNode("Reserver");
       btn.appendChild(text);
       divInfo.appendChild(btn);
-      // let veloDispo = this.station.available_bikes;
-      // if (veloDispo < 1){
-      //   alert("Pas de Velo'v disponibles");
-      // } Mettre sur le marqueur
-    }
+  }
     
   clickBouton(marker){
     let bouton = document.getElementById('boutton');
@@ -49,7 +45,9 @@ class Reservation {
       let minutes = Math.floor(tempsRestant/60);
       let secondes = tempsRestant%60;
       let timeZone = document.getElementById("decompte");
-      timeZone.innerHTML = JSON.stringify(application.reservation.station.name)+ "</br>" + minutes + ":" + secondes;
+      let nameStation = JSON.stringify(application.reservation.station.name);
+      let nameStationClear = nameStation.replace(/[^A-Za-záàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ]+/g, ' ');
+      timeZone.innerHTML = "Vous avez réservé un vélo à la station :</br> "+ nameStationClear + "</br>" + "Il vous reste : " + minutes + ":" + secondes + "s";
       
       if (tempsEcoule > tempsTotal) {
          timeZone.innerHTML = "Reservation terminée";

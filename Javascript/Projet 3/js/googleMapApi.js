@@ -3,7 +3,6 @@ class Map {
     this.map = null;
     this.google = window.google;
     this.data = this.getData();
-    // this.dataURL = 'https://api.jcdecaux.com/vls/v1/stations?contract=lyon&apiKey=fdd1c26d4128f6e256aeca7dc6f3876ca42c1fe0';
   }
   
   initMap(){
