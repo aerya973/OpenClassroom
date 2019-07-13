@@ -1,0 +1,6 @@
+[submodule "eventproject"]
+	path = eventproject
+	url = https://github.com/aerya973/eventproject.git
+[submodule "AlaskaBillet"]
+	path = AlaskaBillet
+	url = https://github.com/aerya973/AlaskaBillet.git
