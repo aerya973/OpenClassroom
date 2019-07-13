@@ -29,6 +29,8 @@
     # FOLDER DESCRIPTIONS
     AddDescription "[<span class='description'>Projet 1</span>]" webagency
     AddDescription "[<span class='description'>Projet 2</span>]" wordpress
+    AddDescription "[<span class='description'>Projet 3</span>]" Javascript
+    AddDescription "[<span class='description'>Projet 4</span>]" PHP
     AddDescription "[<span class='description'>Curriculum vitæ</span>]" CV
 
 </IfModule>

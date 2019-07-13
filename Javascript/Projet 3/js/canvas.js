@@ -22,35 +22,38 @@ class Signature {
 
     
     mouseEvent(){
-        this.canvas.addEventListener("mousedown", this.pointerDown, false);
+        this.canvas.addEventListener("mousedown",this.pointerDown.bind(this), false);
         
-        this.canvas.addEventListener('mousemove', function(event) {
-            application.reservation.signature.paint(event);
+        this.canvas.addEventListener('mousemove', (event) => {
+            this.paint(event);
         }, false );
-        this.canvas.addEventListener("mouseup", this.pointerUp, false);
+        this.canvas.addEventListener("mouseup", this.pointerUp.bind(this), false);
     }
     
-    
+
     paint(event) {
-        if (application.reservation.signature.activ){
-            application.reservation.signature.ctx.lineTo(event.offsetX, event.offsetY);
-            application.reservation.signature.ctx.stroke();
-            [application.reservation.signature.mouseX, application.reservation.signature.mouseY] = [event.offsetX, event.offsetY];
+        if (this.activ){
+            if(this.ctx.isPointInStroke(this.mouseX,this.mouseY) == true){
+                document.getElementById("boutton").disabled = false;
+            }
+            this.ctx.lineTo(event.offsetX, event.offsetY);
+            this.ctx.stroke();
+            [this.mouseX, this.mouseY] = [event.offsetX, event.offsetY];
         }
     }
     
     pointerDown(event) {
-        application.reservation.signature.activ = true;
-        application.reservation.signature.ctx.beginPath();
-        application.reservation.signature.ctx.moveTo(application.reservation.signature.mouseX , application.reservation.signature.mouseY);
-        application.reservation.signature.mouseX = event.offsetX;
-        application.reservation.signature.mouseY = event.offsetY;
+        this.activ = true;
+        this.ctx.beginPath();
+        this.ctx.moveTo(this.mouseX , this.mouseY);
+        this.mouseX = event.offsetX;
+        this.mouseY = event.offsetY;
         
     }
     
     pointerUp() {
-        application.reservation.signature.activ = false;
-        application.reservation.signature.ctx.closePath();
+        this.activ = false;
+        this.ctx.closePath();
     }
 }
 

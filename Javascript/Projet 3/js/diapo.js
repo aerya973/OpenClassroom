@@ -9,24 +9,24 @@ class Diapo {
     }
     
     clickEvent(){
-        this.boutonGauche.addEventListener("click", function(){
-            application.diaporama.plusDivs(-1);
+        this.boutonGauche.addEventListener("click", (event) => {
+            this.plusDivs(-1);
         }  );
-        this.boutonDroite.addEventListener("click", function(){
-            application.diaporama.plusDivs(1);
+        this.boutonDroite.addEventListener("click", (event) => {
+            this.plusDivs(1);
         }  );
         
     }
     
     keyEvent(){
-        document.onkeyup = function() {
+        document.onkeyup = () => {
             var selectDiapo = document.getElementById('diapo');
             //previous
             if (event.keyCode == 37) {
-            application.diaporama.plusDivs(-1);
+            this.plusDivs(-1);
             //Next
             } else if (event.keyCode == 39) {
-            application.diaporama.plusDivs(1);
+           this.plusDivs(1);
             }
         }   
     }

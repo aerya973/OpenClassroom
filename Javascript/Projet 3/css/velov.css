@@ -142,7 +142,7 @@ span {
     font-size: 1.3em;
 }
 
-#nameStation, #stationAdress, #bikeStands{
+#nameStation, #stationAddress, #bikeStands{
     padding-bottom: 10px;
 }
 
@@ -163,6 +163,10 @@ span {
 #boutton:hover {
     background-color: #e23e31;
     color: white;
+}
+
+#boutton:disabled{
+    background-color:#898989;
 }
 
 #signature canvas {

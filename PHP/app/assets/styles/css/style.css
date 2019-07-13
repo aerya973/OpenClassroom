@@ -1,0 +1,184 @@
+html {
+    font-family: 'Rubik', sans-serif;
+}
+
+.navImg {
+  /* The image used */
+  background-image: url("/PHP/app/assets/images/alaska1.jpg");
+  min-height: 400px;
+  width:100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: relative;
+  width: auto;
+  text-align:center;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity:0.9;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgba(0, 0, 0, 0.52);}
+
+ul.topnav li a.active {background-color: #4caf50;}
+
+ul.topnav li.right {float: right;}
+
+li#connexion{
+    float:right;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    
+    li#connexion{
+    float:none;
+}
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+/**Liste Articles**/
+
+
+.articleContainer {
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    height: 100%x;
+    flex-wrap:wrap;
+    padding-left: 1%;
+    margin-top: 1%
+}
+
+.articleOne {
+    border: 1px solid yellow;
+    width: 24%;
+    height: 200px;
+    padding:5px;
+}
+
+.articleTwo {
+    border: 1px solid red;
+    width: 24%;
+    height: 200px;
+    padding:5px;
+}
+
+.articleThree {
+    border: 1px solid green;
+    width: 24%;
+    height: 200px;
+    padding:5px;
+}
+
+.articleFour {
+    border: 1px solid blue;
+    width: 24%;
+    height: 200px;
+    padding:5px;
+}
+
+
+/**Page Connexion**/
+
+#connexionForm {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-left: 40%;
+    padding-top: 2%;
+}
+
+#pseudo, #password {
+    padding-left: 2%;
+}
+
+
+/**FOOTER**/
+
+footer {
+    background-color: #e1e1e1;
+    width: 100%;
+    height: 180px;
+    margin-top: 10%;
+}
+
+/**CONTACT**/
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    width: 50%;
+    padding-left: 25%;
+}
+
+#message {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    padding-left: 1%;
+}
+
+#buttonSubmit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=text], #password {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    text-align: justify;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}

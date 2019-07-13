@@ -3,6 +3,7 @@ class Map {
     this.map = null;
     this.google = window.google;
     this.data = this.getData();
+
   }
   
   initMap(){
@@ -27,13 +28,14 @@ class Map {
       });
       marker.setMap(this.map);
       
-      marker.addListener('click', function(){
-        application.reservation.infoStation(this);
+      marker.addListener('click', () => {
+        application.reservation.infoStation(marker);
+        
       });
     }
   }
 
- 
+
   getData(){
     let url = 'https://api.jcdecaux.com/vls/v1/stations?contract=lyon&apiKey=fdd1c26d4128f6e256aeca7dc6f3876ca42c1fe0';
     const req = new XMLHttpRequest();

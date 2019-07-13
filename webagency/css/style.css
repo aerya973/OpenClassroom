@@ -263,6 +263,7 @@ li .garcon {
 	margin-top: 5px;
 	z-index: 1;
 	bottom: 32.8%;
+    display: none;
 }
 
 .radio-none {
