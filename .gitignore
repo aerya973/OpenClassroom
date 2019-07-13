@@ -17,6 +17,7 @@ wordpress/wp-content/*
 !wordpress/wp-content/plugins/
 !wordpress/wp-content/themes/
 !wordpress/wp-content/mu-plugins/
+wordpress/wp-content/themes/hestia-child/package-lock.json
 
 # Ignore le contenu de "plugins" sauf le dossier de NOTRE plugin personnalisé
 # (la ligne ! sera à répêter pour chaque plugin à commiter...)
